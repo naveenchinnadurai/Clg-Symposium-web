@@ -1,0 +1,39 @@
+.intro-div{
+    height: 100vh;
+}
+.intro-clg-name{
+    font-size: 5vw;
+    text-align: center;
+}
+.intro-txt-animation>span{
+    font-size: 2vw;
+}
+.intro-btn{
+    background-color: rgb(38, 3, 73);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: none;
+}
+.intro-btn:hover{
+    background-color: rgb(67, 5, 129);
+}
+@media screen and (max-width:576px) {
+    .intro-clg-name{
+        font-size:3.5vh;
+    }
+    .intro-txt-2{
+        font-size: 18px;
+    }
+    .intro-txt-animation>span{
+        font-size: 4vw;
+    }
+    .intro-btn{
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin: 5px 0px;
+        font-size: 12px;
+    }
+}
