@@ -1,5 +1,5 @@
 import React from 'react'
-import '../stylings/compoStyle/AboutEvents.css'
+import '../stylings/compoStyle/aboutEvents.css'
 function AboutEvents() {
     return (
         <div className="about-event">
