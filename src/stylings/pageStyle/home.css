@@ -20,6 +20,7 @@
     font-size: 5vh;
     padding:0px 20px;
 }
+
 .banner-end{
     width: 100%;
     padding: 10px 0px;
@@ -33,11 +34,28 @@
 .banner-end>p{
     margin: 10px 0px;
 }
+
 @media screen and (max-width:576px) {
     .home-banner{
         height: 50vh;
         background-color: rgb(66, 58, 73);
         padding-bottom: 0px;
+    }
+    .banner-head>h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .banner-head>p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .banner-head>h2{
+        font-size: 13px !important;
+        font-weight: 500;
+    }
+    .sym-name{
+        font-size: 20px !important;
+        font-weight: 600;
     }
     .banner-end>p{
         font-size: 10px;
@@ -48,16 +66,5 @@
         background-color: rgb(37, 3, 71);
         text-align: center;
         font-size: 10px;
-    }
-    .banner-head>h1{
-        font-size: 18px;
-        text-align: center;
-    }
-    .banner-head>p{
-        font-size: 14px;
-        text-align: center;
-    }
-    .banner-head>h2{
-        font-size: 15px;
     }
 }

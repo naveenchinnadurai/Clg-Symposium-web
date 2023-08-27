@@ -2,6 +2,7 @@ import React from 'react'
 import '../stylings/pageStyle/home.css'
 import AboutEvents from '../components/aboutEvents'
 import SimpleCards from '../components/simpleCards'
+import Footer from '../components/footer'
 function Home() {
     return (
         <div className='home'>
@@ -10,7 +11,7 @@ function Home() {
                     <h1>National Level Technical Symposium</h1>
                     <p>Senguthar Engineering College (Autonomous)</p>
                     <h2>Presents</h2>
-                    <p>TechSym <span className='sym-title'>SAரYU</span> 2k23</p>
+                    <p className='sym-name'>TechSym <span className='sym-title'>SAரYU</span> 2k23</p>
                 </div>
                 <div className="banner-end txt-align-center">
                     <span>Register Now</span>
@@ -19,6 +20,7 @@ function Home() {
             </div>
             <SimpleCards/>
             <AboutEvents/>
+            <Footer/>
         </div>
     )
 }
