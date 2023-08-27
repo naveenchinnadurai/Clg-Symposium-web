@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Intro() {
     return (
-        <div className='h-100vh col justify-center align-center'>
+        <div className='col justify-center align-center intro-div'>
             <MovingText
                 type="fadeIn"
                 duration="7000ms"
