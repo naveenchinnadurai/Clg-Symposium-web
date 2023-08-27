@@ -9,7 +9,7 @@
     font-size: 2vw;
 }
 .intro-btn{
-    background-color: rgb(38, 3, 73);
+    background-color: rgb(34, 6, 61);
     color: white;
     width: fit-content;
     padding: 10px 20px;
@@ -19,22 +19,22 @@
     color: none;
 }
 .intro-btn:hover{
-    background-color: rgb(67, 5, 129);
+    background-color: rgb(71, 24, 117);
 }
 @media screen and (max-width:576px) {
     .intro-clg-name{
-        font-size:3.5vh;
+        font-size:22px;
     }
     .intro-txt-2{
-        font-size: 18px;
+        font-size: 20px;
     }
     .intro-txt-animation>span{
-        font-size: 4vw;
+        font-size: 15px;
+        padding: 0 10%;
+        text-align: center;
     }
     .intro-btn{
-        padding: 5px 10px;
-        border-radius: 20px;
-        margin: 5px 0px;
+        padding: 5px 20px;
         font-size: 12px;
     }
 }
