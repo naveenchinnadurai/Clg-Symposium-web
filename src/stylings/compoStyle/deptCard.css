@@ -1,0 +1,32 @@
+.deptcard{
+    width:20vw;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: rebeccapurple;
+}
+.deptcard-img{
+    background-color: rgb(39, 2, 68);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.dept-link{
+    background-color: rgb(49, 10, 82);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+@media screen and (max-width:576px) {
+    .deptcard{
+        width: 70%;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+    .deptcard>h2{
+        font-size: 18px;
+    }
+    .deptcard>p{
+        font-size: 13px;
+        margin: 10px;
+    }
+
+}

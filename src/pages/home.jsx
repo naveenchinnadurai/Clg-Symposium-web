@@ -3,6 +3,7 @@ import '../stylings/pageStyle/home.css'
 import AboutEvents from '../components/aboutEvents'
 import SimpleCards from '../components/simpleCards'
 import Footer from '../components/footer'
+import DeptCard from '../components/deptCard'
 function Home() {
     return (
         <div className='home'>
@@ -20,6 +21,7 @@ function Home() {
             </div>
             <SimpleCards/>
             <AboutEvents/>
+            <DeptCard/>
             <Footer/>
         </div>
     )

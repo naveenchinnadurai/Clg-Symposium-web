@@ -61,3 +61,11 @@ html::-webkit-scrollbar-thumb{
 .txt-align-center{
   text-align: center;
 }
+.txt-align-left{
+  text-align: left;
+}
+.link-tag{
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}

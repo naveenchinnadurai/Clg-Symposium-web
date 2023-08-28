@@ -1,0 +1,144 @@
+.deptpage{
+    background-color: rebeccapurple;
+}
+.deptpage-div-1{
+    background-color: rgb(42, 1, 75);
+    padding:20px 10%;
+}
+.deptpage-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(128, 15, 204);
+}
+.deptpage-title{
+    width: 80%;
+}
+.deptpage-title>h1{
+    width: 50%;
+    line-height: 35px;
+}
+.deptpage-title>p{
+    text-align: left;
+    font-size: 18px;
+    padding: 10px 20px;
+    line-height: 25px;
+}
+.deptpage-btns{
+    margin:10px 0;
+    width: 100%;
+}
+.deptpage-btns>.link-tag{
+    background-color: rgb(67, 8, 131);
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+@media screen and (max-width:576px) {
+    .deptpage-div-1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .deptpage-title{
+        width: 100%;
+    }
+    .deptpage-title>h1{
+        width: 100%;
+        line-height: 30px;
+        font-size: 25px;
+    }
+    .deptpage-title>p{
+        text-align: justify;
+        font-size: 13px;
+        padding: 10px 0px;
+        line-height: 23px;
+    }
+    .deptpage-btns>.link-tag{
+        padding: 5px 15px;
+        font-size: 15px;
+        border-radius: 20px;
+    }
+}
+/* event detail section styles */
+.deptpage-div-2{
+    padding: 20px 13%;
+}
+.event-navbar{
+    width: 40%;
+}
+.event-navbar>.link-tag{
+    background-color: rebeccapurple;
+    padding: 10px;
+    border-bottom: 1px solid rgb(49, 0, 71);
+    font-size: 20px;
+}
+.event-navbar>.link-tag:hover{
+    background-color: rgb(45, 1, 88);
+}
+.event-details-div{
+    height: 100%;
+    background-color: rgb(60, 2, 71);
+    padding: 10px 20px ;
+}
+.ppt-div-1{
+    width: 80%;
+}
+.ppt-date{
+    margin: 10px 0;
+}
+.event-time{
+    margin: 10px 20px;
+}
+.event-time>span,.event-time>p{
+    margin: 10px 20px;
+}
+.event-incharge-details>span{
+    margin: 10px;
+}
+.ppt-div-2{
+    width: 15%;
+}
+
+@media screen and (max-width:576px) {
+    .deptpage-div-2{
+        padding: 0px 0;
+    }
+    .event-details{
+        flex-direction: column;
+    }
+    .event-navbar{
+        flex-direction: row !important;
+        width: 100%;
+    }
+    .event-navbar>.link-tag{
+        padding: 5px;
+        font-size: 15px;
+        border: none;
+    }
+    .event-details-div{
+        padding: 10px;
+    }
+    .ppt-main-div{
+        flex-direction: column;
+    }
+    .ppt-div-1{
+        width: 100%;
+        font-size: 15px;
+    }
+    .event-time>span,.event-time>p{
+        margin: 10px;
+    }
+    .event-incharge-details>span{
+        margin: 10px;
+    }
+    .ppt-div-2{
+        width: 100%;
+        font-size: 15px;
+        margin: 20px 0;
+    }
+    .event-incharge-details>span{
+        margin: 0px;
+        font-size: 15px;
+    }
+}
