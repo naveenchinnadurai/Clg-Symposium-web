@@ -94,8 +94,7 @@
     padding: 10px 0;
 }
 .redirect-main::-webkit-scrollbar {
-    height: 0px;
-    width: 0px;
+    width: 10px;
     background-color: red;
 }
 
@@ -105,11 +104,6 @@
     display: flex;
     width: 200vw;
     overflow-x: scroll;
-}
-.dept-redirect::-webkit-scrollbar{
-    width: 0px;
-    height: 0px;
-    background-color: blue;
 }
 @media screen and (max-width:576px) {
     .redirect-main{
