@@ -93,6 +93,10 @@
     background-color: rgb(28, 0, 46);
     padding: 10px 0;
 }
+.redirect-main::-webkit-scrollbar {
+    width: 0px;
+}
+
 .dept-redirect {
     margin: 0 auto;
     padding: 0px 20px;
