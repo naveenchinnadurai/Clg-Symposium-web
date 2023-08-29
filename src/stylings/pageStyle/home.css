@@ -93,10 +93,6 @@
     background-color: rgb(28, 0, 46);
     padding: 10px 0;
 }
-.redirect-main::-webkit-scrollbar-track{
-    height: 0px;
-    width: 0px;
-}
 .redirect-main::-webkit-scrollbar {
     height: 0px;
     width: 0px;
@@ -109,7 +105,10 @@
     width: 200vw;
     overflow-x: scroll;
 }
-
+.dept-redirect::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
 @media screen and (max-width:576px) {
     .redirect-main{
         padding: 0;
