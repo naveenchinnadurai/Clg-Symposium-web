@@ -96,6 +96,7 @@
 .redirect-main::-webkit-scrollbar {
     height: 0px;
     width: 0px;
+    background-color: red;
 }
 
 .dept-redirect {
