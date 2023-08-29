@@ -1,5 +1,6 @@
 import React from 'react'
 import '../stylings/compoStyle/footer.css'
+import qr from '../assets/registrationQr.jpg'
 import { FaInstagram as Insta, FaFacebookSquare as FB } from 'react-icons/fa'
 import { FiMail as Mail } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
@@ -22,7 +23,9 @@ function Footer() {
           <Link className='link-tag'>Contact</Link>
         </div>
         <div className="col align-center footer-div-3">
-          <div className="footer-img-div"></div>
+          <div className="row justify-center footer-img-div">
+            <img src={qr} alt="registration QR" className='qr-img' />
+          </div>
           <p>Register Now to Particate </p>
         </div>
       </div>

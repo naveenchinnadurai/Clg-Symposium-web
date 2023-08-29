@@ -25,8 +25,12 @@
 }
 .footer-img-div{
     height: 70%;
-    width: 70%;
-    background-color: rgb(64, 36, 90);
+    width: 60%;
+}
+.qr-img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
 }
 .footer-div-3>p{
     letter-spacing: 2px;
@@ -80,8 +84,10 @@
         font-weight: 200;
     }
     .footer-img-div{
-        height: 100px;
-        width: 150px;
+        margin: 10px 0px;
+    }
+    .qr-img{
+        width: 60%;
     }
     .footer>p{
         font-size: 10px;
