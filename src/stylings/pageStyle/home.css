@@ -109,6 +109,7 @@
 .dept-redirect::-webkit-scrollbar{
     width: 0px;
     height: 0px;
+    background-color: blue;
 }
 @media screen and (max-width:576px) {
     .redirect-main{
