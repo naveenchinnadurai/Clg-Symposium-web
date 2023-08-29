@@ -2,13 +2,13 @@ import React from 'react'
 import '../stylings/compoStyle/deptCard.css'
 import { Link } from 'react-router-dom'
 
-function DeptCard() {
+function DeptCard(props) {
   return (
     <div className='col align-center deptcard'>
         <div className="deptcard-img"></div>
-        <h2 className="deptcard-title">CSE</h2>
-        <p className='txt-align-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.</p>
-        <Link to='/deptpage' className='link-tag dept-link'>Know more</Link>
+        <h2 className="deptcard-title">{props.name}</h2>
+        <p className='txt-align-center'>{props.txt}</p>
+        <Link to={props.to} className='link-tag dept-link'>View more</Link>
     </div>
   )
 }

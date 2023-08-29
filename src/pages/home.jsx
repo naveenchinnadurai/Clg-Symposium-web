@@ -4,7 +4,18 @@ import AboutEvents from '../components/aboutEvents'
 import SimpleCards from '../components/simpleCards'
 import Footer from '../components/footer'
 import DeptCard from '../components/deptCard'
+import { deptDetails } from '../scripts/deptInfo'
 function Home() {
+    const displayCard = deptDetails.map((dept) => {
+        return (
+            <DeptCard
+                key={dept.id}
+                name={dept.nameShort}
+                txt={dept.deptTxt1}
+                to={dept.to}
+            />
+        )
+    })
     return (
         <div className='home'>
             <div className="home-banner col align-center">
@@ -19,10 +30,13 @@ function Home() {
                     <p>Awesome adventures await, and you're at the forefront! The doors to unforgettable experiences are swinging open.</p>
                 </div>
             </div>
-            <SimpleCards/>
-            <AboutEvents/>
-            <DeptCard/>
-            <Footer/>
+            <SimpleCards />
+            <AboutEvents />
+            <h1 className='txt-align-center dept-nav-head'>Departments</h1>
+            <div className="txt-align-center redirect-main">
+                <div className="dept-redirect">{displayCard}</div>
+            </div>
+            <Footer />
         </div>
     )
 }

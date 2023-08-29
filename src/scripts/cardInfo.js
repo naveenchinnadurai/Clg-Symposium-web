@@ -8,8 +8,8 @@ export const cardDetails=[
     {
         id:'card-2',
         title:'Location',
-        content:'Kosvampalayam,Kumaramangalam(PO)',
-        content1:'Tiruchengode-637 205,Nammakkal(Dt),Tamil Nadu',
+        content:'Kosvampalayam, Kumaramangalam(PO)',
+        content1:'Tiruchengode-637 205,Nammakkal(Dt), Tamil Nadu',
     },
     {
         id:'card-3',

@@ -35,6 +35,10 @@
     border-radius: 20px;
 }
 @media screen and (max-width:576px) {
+    .deptpage-img{
+        height: 100px;
+        width: 100px;
+    }
     .deptpage-div-1{
         flex-direction: column;
         align-items: center;
@@ -56,7 +60,7 @@
     }
     .deptpage-btns>.link-tag{
         padding: 5px 15px;
-        font-size: 15px;
+        font-size: 12px;
         border-radius: 20px;
     }
 }
@@ -102,7 +106,10 @@
 
 @media screen and (max-width:576px) {
     .deptpage-div-2{
-        padding: 0px 0;
+        padding: 0;
+    }
+    .deptpage-div-2>h1{
+        font-size: 25px;
     }
     .event-details{
         flex-direction: column;
@@ -110,10 +117,14 @@
     .event-navbar{
         flex-direction: row !important;
         width: 100%;
+        padding: 3px;
+        justify-content: space-evenly;
     }
     .event-navbar>.link-tag{
-        padding: 5px;
+        padding: 5px 13px;
+        width: fit-content;
         font-size: 15px;
+        margin: 0px;
         border: none;
     }
     .event-details-div{
@@ -125,6 +136,11 @@
     .ppt-div-1{
         width: 100%;
         font-size: 15px;
+    }
+    .ppt-div-1>h3{
+        margin: 5px 0;
+        font-size: 20px;
+        font-weight: 400;
     }
     .event-time>span,.event-time>p{
         margin: 10px;
