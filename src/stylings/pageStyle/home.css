@@ -102,7 +102,6 @@
     padding: 0px 20px;
     display: flex;
     width: 200vw;
-    overflow-x: scroll;
 }
 @media screen and (max-width:576px) {
     .redirect-main{
