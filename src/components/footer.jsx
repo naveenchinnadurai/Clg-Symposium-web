@@ -17,19 +17,21 @@ function Footer() {
           </div>
         </div>
         <div className="col align-start footer-div-2">
-          <Link className='link-tag'>Home</Link>
+          <Link className='link-tag' to='/home'>Home</Link>
           <Link className='link-tag'>Departments</Link>
           <Link className='link-tag'>About</Link>
           <Link className='link-tag'>Contact</Link>
         </div>
         <div className="col align-center footer-div-3">
           <div className="row justify-center footer-img-div">
-            <img src={qr} alt="registration QR" className='qr-img' />
+            <Link className='link-tag' to='https://docs.google.com/forms/d/e/1FAIpQLSctdEF5mNAKptZJaaE8say8cbBSBvo6dxJlia5v6eK5mugjng/viewform?fbzx=2426317002727290543'>
+              <img src={qr} alt="registration QR" className='qr-img' />
+            </Link>
           </div>
           <p>Register Now to Particate </p>
         </div>
       </div>
-      <p>&copy;All copyrights reserved for SEC</p>
+      <p>&copy;All copyrights reserved for SEC-2023</p>
     </div>
 
   )

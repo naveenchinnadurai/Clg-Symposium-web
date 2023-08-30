@@ -7,7 +7,7 @@ import PPtSection from '../components/pptSection'
 import Event2Section from '../components/event2'
 
 function DeptPage() {
-    const [eventArea,setEventArea]=useState(<Event2Section/>)
+    const [eventArea,setEventArea]=useState(<PPtSection/>)
 
     const switchPpt=()=>{
         setEventArea(<PPtSection/>)
@@ -23,7 +23,10 @@ function DeptPage() {
                     <h1>Department of Computer Science and Engineering</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusamus fugit sequi officiis tempora maxime ullam nemo animi, id molestiae fugiat ipsam natus mollitia nam veritatis voluptatum expedita iste libero? Illum est in earum. Temporibus repudiandae odit rerum culpa omnis?</p>
                     <div className="deptpage-btns">
-                        <Link className='link-tag'>Register Now</Link>
+                        <Link
+                        className='link-tag'
+                        to='https://docs.google.com/forms/d/e/1FAIpQLSctdEF5mNAKptZJaaE8say8cbBSBvo6dxJlia5v6eK5mugjng/viewform?fbzx=2426317002727290543'
+                        >Register Now</Link>
                         <Link className='link-tag'>Contact </Link>
                     </div>
                 </div>

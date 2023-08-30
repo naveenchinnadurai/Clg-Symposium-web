@@ -29,9 +29,9 @@
     padding: 10px 0px;
 }
 
-.banner-end>span {
-    padding: 5px 10px;
-    border-radius: 8px;
+.banner-end>.link-tag {
+    padding: 5px 15px;
+    border-radius: 10px;
     background-color: rgb(37, 3, 71);
     text-align: center;
 }

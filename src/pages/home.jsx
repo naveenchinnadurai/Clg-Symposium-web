@@ -5,6 +5,7 @@ import SimpleCards from '../components/simpleCards'
 import Footer from '../components/footer'
 import DeptCard from '../components/deptCard'
 import { deptDetails } from '../scripts/deptInfo'
+import {Link} from 'react-router-dom'
 function Home() {
     const displayCard = deptDetails.map((dept) => {
         return (
@@ -26,7 +27,10 @@ function Home() {
                     <p className='sym-name'>TechSym <span className='sym-title'>SAரYU</span> 2k23</p>
                 </div>
                 <div className="banner-end txt-align-center">
-                    <span>Register Now</span>
+                    <Link
+                    to='https://docs.google.com/forms/d/e/1FAIpQLSctdEF5mNAKptZJaaE8say8cbBSBvo6dxJlia5v6eK5mugjng/viewform?fbzx=2426317002727290543'
+                    className='link-tag'
+                    >Register Now</Link>
                     <p>Awesome adventures await, and you're at the forefront! The doors to unforgettable experiences are swinging open.</p>
                 </div>
             </div>
