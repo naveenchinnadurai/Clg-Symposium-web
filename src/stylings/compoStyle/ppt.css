@@ -5,7 +5,7 @@
     padding: 10px 20px ;
 }
 .ppt-div-1{
-    width: 80%;
+    width: 78%;
 }
 .ppt-div-1>h3{
     color: rgb(213, 18, 252) ;
@@ -24,6 +24,9 @@
 }
 .ppt-div-2{
     width: 20%;
+}
+.ppt-div-2>p{
+    margin: 7px 5px;
 }
 
 @media screen and (max-width:576px) {
