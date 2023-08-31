@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../stylings/pageStyle/home.css'
 import AboutEvents from '../components/aboutEvents'
 import SimpleCards from '../components/simpleCards'
 import Footer from '../components/footer'
 import DeptCard from '../components/deptCard'
 import { deptDetails } from '../scripts/deptInfo'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { Element, Link as ScrollLink } from 'react-scroll'
+import { BsArrowUpCircle as Top } from 'react-icons/bs'
+/* import poster from '../assets/poster.jpg'*/
 function Home() {
     const displayCard = deptDetails.map((dept) => {
         return (
@@ -13,13 +16,15 @@ function Home() {
                 key={dept.id}
                 name={dept.nameShort}
                 txt={dept.deptTxt1}
-                to={dept.to}
+                deptment={dept}
             />
         )
     })
+
+
     return (
         <div className='home'>
-            <div className="home-banner col align-center">
+            <div className="col align-center home-banner">
                 <div className="banner-head col align-center">
                     <h1>National Level Technical Symposium</h1>
                     <p>Senguthar Engineering College (Autonomous)</p>
@@ -28,18 +33,22 @@ function Home() {
                 </div>
                 <div className="banner-end txt-align-center">
                     <Link
-                    to='https://docs.google.com/forms/d/e/1FAIpQLSctdEF5mNAKptZJaaE8say8cbBSBvo6dxJlia5v6eK5mugjng/viewform?fbzx=2426317002727290543'
-                    className='link-tag'
+                        to='https://docs.google.com/forms/d/e/1FAIpQLSctdEF5mNAKptZJaaE8say8cbBSBvo6dxJlia5v6eK5mugjng/viewform?fbzx=2426317002727290543'
+                        className='link-tag'
                     >Register Now</Link>
                     <p>Awesome adventures await, and you're at the forefront! The doors to unforgettable experiences are swinging open.</p>
                 </div>
             </div>
             <SimpleCards />
-            <AboutEvents />
+            <Element name="about" className="about"><AboutEvents /></Element>
+{/*             <div className="row poster-img-div">
+                <img src={poster} alt="Poster-img" className='poster-img' />
+            </div> */}
             <h1 className='txt-align-center dept-nav-head'>Departments</h1>
-            <div className="txt-align-center redirect-main">
+            <Element className="txt-align-center redirect-main">
                 <div className="dept-redirect">{displayCard}</div>
-            </div>
+            </Element>
+            <ScrollLink className="row btn-top" to='home-banner' smooth={true} duration={3000}><Top /></ScrollLink>
             <Footer />
         </div>
     )

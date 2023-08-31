@@ -4,6 +4,7 @@ import qr from '../assets/registrationQr.jpg'
 import { FaInstagram as Insta, FaFacebookSquare as FB } from 'react-icons/fa'
 import { FiMail as Mail } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
+import { Link as ScrollLink} from 'react-scroll'
 function Footer() {
   return (
     <div className='col align-center footer'>
@@ -18,8 +19,8 @@ function Footer() {
         </div>
         <div className="col align-start footer-div-2">
           <Link className='link-tag' to='/home'>Home</Link>
-          <Link className='link-tag'>Departments</Link>
-          <Link className='link-tag'>About</Link>
+          <ScrollLink className='link-tag' smooth={true} to='dept-nav-head' duration={3000}>Departments</ScrollLink>
+          <ScrollLink to='about' smooth={true} className='link-tag' duration={3000}>About</ScrollLink>
           <Link className='link-tag'>Contact</Link>
         </div>
         <div className="col align-center footer-div-3">

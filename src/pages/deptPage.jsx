@@ -4,56 +4,48 @@ import { Link } from 'react-router-dom'
 import Footer from '../components/footer'
 import { useState } from 'react'
 import EventSection from '../components/eventSection'
-function DeptPage() {
-    const [eventArea, setEventArea] = useState(
-        <EventSection
-            eventName='Paper Presentation'
-            eventInfo='Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi beatae sit sed nihil, a excepturi tempora possimus iure maxime dignissimos ducimus voluptate inventore, nisi iusto, et autem ratione officia vitae.'
-            eventTxt='Last date for paper Submission:19/09/2023'
-            date='26/09/2023'
-            time='12:30PM'
-            venue='CSE lab-I,1st floor,Main Block'
-            title2='Topics'
-            eventInfo2='Any Topics as per your wish and convenience'
-            coOrdinatorName='K.Akash(st)CSE-III yr'
-            coOrdinatorPhn='9878567465'
-        />
-    )
+import { deptDetails } from '../scripts/deptInfo'
+import { Element,Link as ScrollLink } from 'react-scroll'
+import { BsArrowUpCircle as Top } from 'react-icons/bs'
+
+
+function DeptPage(props) {
+    const cse = deptDetails[0]
+    const PPTSection = <EventSection
+        eventName={cse.event1.eventTitle}
+        eventInfo={cse.event1.generalInfo}
+        eventTxt={cse.event1.txt1}
+        date={cse.event1.date}
+        time={cse.event1.time}
+        venue={cse.event1.venue}
+        title2={cse.event1.extraInfo.title}
+        eventInfo2={cse.event1.extraInfo.txt}
+        coOrdinatorName={cse.event1.coOrdinator.name}
+        coOrdinatorPhn={cse.event1.coOrdinator.phn}
+    />
+    const [eventArea, setEventArea] = useState(PPTSection)
 
     const switchPpt = () => {
-        setEventArea(
-            <EventSection
-                eventName='Paper Presentation'
-                eventInfo='Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi beatae sit sed nihil, a excepturi tempora possimus iure maxime dignissimos ducimus voluptate inventore, nisi iusto, et autem ratione officia vitae.'
-                eventTxt='Last date for paper Submission:19/09/2023'
-                date='26/09/2023'
-                time='12:30PM'
-                venue='CSE lab-I,1st floor,Main Block'
-                title2='Topics'
-                eventInfo2='Any Topics as per your wish and convenience'
-                coOrdinatorName='K.Akash(st)CSE-III yr'
-                coOrdinatorPhn='9878567465'
-            />
-        )
+        setEventArea(PPTSection)
     }
     const switchCode = () => {
         setEventArea(
             <EventSection
-                eventName='Code Cracking '
-                eventInfo='nemo at ad voluptatum consectetur culpa delectus explicabo quam non sed laborum. Aliquid commodi ad quis natus neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-                eventTxt='A Team can consist of maximum 3 memebers'
-                date='27/09/2023'
-                time='10:30AM'
-                venue='CSE lab-III,2nd floor,Main Block'
-                title2='Rounds:'
-                eventInfo2='Round:1 - Preliminary/ Debugging(20 mins)'
-                eventInfo3='Round:2 - Coding Round(30 mins)'
-                coOrdinatorName='R.Manikandan(st)CSE-III yr'
-                coOrdinatorPhn='8907663542'
+                eventName={cse.event2.eventTitle}
+                eventInfo={cse.event2.generalInfo}
+                eventTxt={cse.event1.txt1}
+                date={cse.event2.date}
+                time={cse.event2.time}
+                venue={cse.event2.venue}
+                title2={cse.event2.extraInfo.title}
+                eventInfo1={cse.event2.extraInfo.txt1}
+                eventInfo2={cse.event2.extraInfo.txt2}
+                coOrdinatorName={cse.event2.coOrdinator.name}
+                coOrdinatorPhn={cse.event2.coOrdinator.phn}
             />
         )
     }
-    const switchPoster=()=>{
+    const switchPoster = () => {
         setEventArea(
             <EventSection
                 eventName='Poster Design'
@@ -71,7 +63,7 @@ function DeptPage() {
     }
     return (
         <div className='deptpage'>
-            <div className="row justify-se deptpage-div-1">
+            <Element className="row justify-se deptpage-div-1">
                 <div className="deptpage-img"></div>
                 <div className="col align-center txt-align-center deptpage-title">
                     <h1>Department of Computer Science and Engineering</h1>
@@ -84,20 +76,21 @@ function DeptPage() {
                         <Link className='link-tag'>Contact </Link>
                     </div>
                 </div>
-            </div>
+            </Element>
             <div className="txt-align-center deptpage-div-2">
                 <h1>Event Details</h1>
                 <div className="row align-center event-details">
                     <div className="col event-navbar">
                         <Link className='link-tag' onClick={switchPpt}>PPT</Link>
                         <Link className='link-tag' onClick={switchCode}>Code Cracking</Link>
-                        <Link className='link-tag'onClick={switchPoster}>Poster Design</Link>
+                        <Link className='link-tag' onClick={switchPoster}>Poster Design</Link>
                         <Link className='link-tag'>Non-technical Events</Link>
 
                     </div>
                     <div className="event-detail-switch-area">{eventArea}</div>
                 </div>
             </div>
+            <ScrollLink className="row btn-top" to='deptpage-div-1' smooth={true} duration={1000}><Top /></ScrollLink>
             <Footer />
         </div>
     )

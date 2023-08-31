@@ -40,6 +40,14 @@
     margin: 10px 0px;
 }
 
+.poster-img-div{
+    width: 100vw;
+    padding: 0 20px;
+    justify-content: center;
+}
+.poster-img{
+    width: 70%;
+}
 @media screen and (max-width:576px) {
     .home-banner {
         height: 50vh;
@@ -102,6 +110,16 @@
     padding: 0px 20px;
     display: flex;
     width: 200vw;
+    background-color: none;
+}
+.btn-top{
+    font-size: 40px;
+    width: 100vw;
+    justify-content: flex-end;
+    padding: 0 20px;
+    border: none;
+    background-color: rgb(28, 0, 46);
+    cursor: pointer;
 }
 @media screen and (max-width:576px) {
     .redirect-main{
@@ -116,5 +134,8 @@
     }
     .dept-nav-head{
         font-size: 25px;
+    }
+    .btn-top{
+        font-size: 30px;
     }
 }

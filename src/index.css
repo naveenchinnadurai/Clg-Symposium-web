@@ -68,4 +68,5 @@ html::-webkit-scrollbar-thumb{
   text-decoration: none;
   color: white;
   margin: 5px;
+  cursor: pointer;
 }

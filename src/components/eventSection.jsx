@@ -17,12 +17,12 @@ function EventSection(props) {
                 </div>
                 <div className="ppt-div-2">
                     <h4>{props.title2}</h4>
+                    <p>{props.eventInfo1}</p>
                     <p>{props.eventInfo2}</p>
-                    <p>{props.eventInfo3}</p>
                 </div>
             </div>
             <div className="col event-incharge-details">
-                <h4>Event Co-ordinator:</h4>
+                <h4>Event Co-Ordinator:</h4>
                 <span>Name:{props.coOrdinatorName}</span>
                 <span>Phn No. : {props.coOrdinatorPhn}</span>
             </div>
