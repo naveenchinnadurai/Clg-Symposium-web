@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom'
 import { Element, Link as ScrollLink } from 'react-scroll'
 import { BsArrowUpCircle as Top } from 'react-icons/bs'
 import MovingText from 'react-moving-text'
-import poster from '../assets/poster.png'
 function Home() {
     const displayCard = deptDetails.map((dept) => {
         return (
@@ -48,9 +47,6 @@ function Home() {
             </div>
             <SimpleCards />
             <Element name="about" className="about"><AboutEvents /></Element>
-            <div className="row poster-img-div" data-aos="fade-in">
-                <img src={poster} alt="Poster-img" className='poster-img' />
-            </div>
             <h1 className='txt-align-center dept-nav-head' >Departments</h1>
             <Element className="txt-align-center redirect-main" >
                 <div className="dept-redirect">{displayCard}</div>

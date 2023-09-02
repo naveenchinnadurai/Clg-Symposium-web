@@ -12,6 +12,14 @@
     height: 200px;
     margin: 0px 20px;
 }
+.poster-img-div{
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: center;
+}
+.poster-img{
+    width: 80%;
+}
 @media screen and (max-width:576px) {
     .about-event {
         padding: 8px;
@@ -38,5 +46,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin: 5px 0;
+    }
+    .poster-img{
+        display:contents;
     }
 }

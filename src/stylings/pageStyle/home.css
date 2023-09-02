@@ -1,8 +1,9 @@
 
 .home-banner {
-    padding: 20px;
+    padding-top: 20px;
     height: 70vh;
     width: 100%;
+    background-color: rgb(66, 58, 73);
     background-image: url('../../assets/logo.png');
     justify-content: space-between;
     background-position: center;
@@ -38,17 +39,10 @@
 }
 
 .banner-end>p {
-    margin: 10px 0px;
+    margin-top: 10px;
 }
 
-.poster-img-div{
-    width: 100vw;
-    padding: 10px 20px;
-    justify-content: center;
-}
-.poster-img{
-    width: 60%;
-}
+
 @media screen and (max-width:576px) {
     .home-banner {
         height: 60vh;
@@ -86,9 +80,6 @@
         background-color: rgb(37, 3, 71);
         text-align: center;
         font-size: 10px;
-    }
-    .poster-img{
-        display:contents;
     }
 }
 

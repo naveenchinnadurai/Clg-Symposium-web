@@ -73,7 +73,7 @@ function DeptPage(props) {
                             className='link-tag'
                             to='https://docs.google.com/forms/d/e/1FAIpQLSctdEF5mNAKptZJaaE8say8cbBSBvo6dxJlia5v6eK5mugjng/viewform?fbzx=2426317002727290543'
                         >Register Now</Link>
-                        <Link className='link-tag'>Contact </Link>
+                        <Link to='/home' className='link-tag'>Home </Link>
                     </div>
                 </div>
             </Element>

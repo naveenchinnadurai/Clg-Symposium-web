@@ -1,5 +1,6 @@
 import React from 'react'
 import '../stylings/compoStyle/aboutEvents.css'
+import poster from '../assets/poster.png'
 function AboutEvents() {
     return (
         <div className="about-event" data-aos="zoom-in-left" data-aos-delay="1"  data-aos-offset="0">
@@ -10,6 +11,9 @@ function AboutEvents() {
                     <p>Discover a realm of intellect and innovation at our college's symposium event. Engage with visionary speakers, cutting-edge research, and vibrant discussions that span across various disciplines. Join us for a day that celebrates curiosity and fosters insightful dialogues, inspiring the next generation of thought leaders.</p>
                 </div>
                 <div className="about-img"></div>
+            </div>
+            <div className="row poster-img-div" data-aos="fade-in">
+                <img src={poster} alt="Poster-img" className='poster-img' />
             </div>
         </div>
     )
