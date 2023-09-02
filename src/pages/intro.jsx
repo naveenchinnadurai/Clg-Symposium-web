@@ -22,7 +22,7 @@ function Intro() {
                 <span>Organizes National level Students Technical Symposium</span>
                 <Link to='/home' className='intro-btn'>Know More</Link>
             </MovingText>
-            <p className='intro-para'><Warn/> If 404 error occurs: close all tabs and try again</p>
+            <p className='intro-para'><Warn/> If 404 error occurs, close all tabs and try again</p>
         </div>
     )
 }
