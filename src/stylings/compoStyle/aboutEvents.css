@@ -32,5 +32,8 @@
     }
     .about-img{
         margin: 0px;
+        background-image: url('../../assets//poster.png');
+        background-position: center;
+        background-size: contain;
     }
 }
