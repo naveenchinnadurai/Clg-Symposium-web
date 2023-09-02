@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 import { Element, Link as ScrollLink } from 'react-scroll'
 import { BsArrowUpCircle as Top } from 'react-icons/bs'
 import MovingText from 'react-moving-text'
+/* import { FaWhatsapp as WB } from 'react-icons/fa6'*/
 function Home() {
     const displayCard = deptDetails.map((dept) => {
         return (
@@ -51,7 +52,7 @@ function Home() {
             <Element className="txt-align-center redirect-main" >
                 <div className="dept-redirect">{displayCard}</div>
             </Element>
-            <div className="row bottom-top-btn" data-aos="fade-in">
+            <div className="row bottom-top-btn">
                 <ScrollLink className="btn-top" to='home-banner' smooth={true} duration={3000}><Top /></ScrollLink>
             </div>
             <Footer />

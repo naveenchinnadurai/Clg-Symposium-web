@@ -1,10 +1,10 @@
 .card-div{
-    background-color: rgb(66, 62, 62);
+    background-color: rgb(46, 41, 49);
     padding: 20px 10%;
     justify-content: space-between;
 }
 .card{
-    background-color: rebeccapurple;
+    background-color: rgb(83, 37, 129);
     width: 30%;
     padding: 10px;
     text-align: center;

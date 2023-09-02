@@ -3,7 +3,7 @@ import '../stylings/compoStyle/aboutEvents.css'
 import poster from '../assets/poster.png'
 function AboutEvents() {
     return (
-        <div className="about-event" data-aos="zoom-in-left" data-aos-delay="1"  data-aos-offset="0">
+        <div className="about-event" data-aos="fade-in" data-aos-offset="0">
             <h2>Know About Events</h2>
             <div className="about-event-content row">
                 <div className="about-txt">
@@ -12,7 +12,8 @@ function AboutEvents() {
                 </div>
                 <div className="about-img"></div>
             </div>
-            <div className="row poster-img-div" data-aos="fade-in">
+            <div className="col poster-img-div">
+                <h2>SYMPOSIUM POSTER</h2>
                 <img src={poster} alt="Poster-img" className='poster-img' />
             </div>
         </div>

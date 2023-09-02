@@ -3,11 +3,11 @@
     padding-top: 20px;
     height: 70vh;
     width: 100%;
-    background-color: rgb(66, 58, 73);
+    background-color: rgb(46, 41, 49);
     background-image: url('../../assets/logo.png');
     justify-content: space-between;
+    background-size:contain;
     background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
     background-blend-mode:multiply;
 }
@@ -46,8 +46,8 @@
 @media screen and (max-width:576px) {
     .home-banner {
         height: 60vh;
-        background-color: rgb(66, 58, 73);
         padding-bottom: 0px;
+        background-size:60%;
     }
 
     .banner-head>h1 {
@@ -108,20 +108,7 @@
     width: 200vw;
     background-color: none;
 }
-.bottom-top-btn{
-    justify-content: flex-end;
-    margin-top: -30px;
-    background-color: rgb(28, 0, 46);
-}
-.btn-top{
-    font-size: 40px;
-    justify-content: flex-end;
-    border: none;
-    margin-right: 15px;
-    height: fit-content;
-    width: fit-content;
-    cursor: pointer;
-}
+
 @media screen and (max-width:576px) {
     .redirect-main{
         padding: 10px 0 ;
@@ -136,9 +123,6 @@
     }
     .dept-nav-head{
         font-size: 25px;
-        margin-top: -20px;
     }
-    .btn-top{
-        font-size: 30px;
-    }
+
 }

@@ -89,7 +89,9 @@ function DeptPage(props) {
                     <div className="event-detail-switch-area">{eventArea}</div>
                 </div>
             </div>
-            <ScrollLink className="row btn-top" to='deptpage-div-1' smooth={true} duration={1000}><Top /></ScrollLink>
+            <div className="row bottom-top-btn">
+                <ScrollLink className="btn-top" to='deptpage-div-1' smooth={true} duration={3000}><Top /></ScrollLink>
+            </div>
             <Footer />
         </div>
     )

@@ -69,3 +69,29 @@ html::-webkit-scrollbar-thumb{
   margin: 5px;
   cursor: pointer;
 }
+
+/* bottom to top button */
+.bottom-top-btn{
+  justify-content: flex-end;
+  margin-bottom: -60px;
+}
+
+.btn-top{
+  font-size: 40px;
+  justify-content: flex-end;
+  border: none;
+  margin-right: 30px;
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+@media screen and (max-width:576px) {
+  .bottom-top-btn{
+    margin-top: -50px;
+    margin-bottom: 0;
+  }
+  .btn-top{
+    font-size: 30px;
+    margin-right: 10px;
+}
+}

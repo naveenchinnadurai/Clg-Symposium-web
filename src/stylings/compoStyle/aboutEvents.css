@@ -15,10 +15,14 @@
 .poster-img-div{
     width: 100%;
     padding: 10px 20px;
-    justify-content: center;
+    align-items: center;
+}
+.poster-img-div>h2{
+    color: black;
+    margin: 10px 0;
 }
 .poster-img{
-    width: 80%;
+    width: 90%;
 }
 @media screen and (max-width:576px) {
     .about-event {
@@ -40,14 +44,17 @@
     }
     .about-img{
         margin: 0px;
-        background-color:rgb(77, 65, 90);
-        background-image: url('../../assets//poster.png');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
         margin: 5px 0;
     }
+    .poster-img-div{
+        padding: 0;
+        margin: 0px;
+    }
     .poster-img{
-        display:contents;
+        width: 100%;
+    }
+    .poster-img-div>h2{
+        font-size: 15px;
+        margin: 0;
     }
 }

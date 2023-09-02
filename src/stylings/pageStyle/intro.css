@@ -1,8 +1,13 @@
 .intro-div{
-    height:80vh;
+    height:100vh;
+    justify-content: space-between;
+}
+.intro-txt-animation{
+    height: 90%;
+    justify-content: center;
 }
 .intro-clg-name{
-    font-size: 5vw;
+    font-size: 60px;
     text-align: center;
 }
 .intro-txt-animation>span{
@@ -12,14 +17,18 @@
     background-color: rgb(34, 6, 61);
     color: white;
     width: fit-content;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 20px;
     margin: 10px 0px;
     text-decoration: none;
     color: none;
 }
 .intro-btn:hover{
-    background-color: rgb(71, 24, 117);
+    background-color: rgb(40, 4, 77);
+}
+.intro-para{
+    color: rgb(90, 87, 87);
+    padding: 10px 0;
 }
 @media screen and (max-width:576px) {
     .intro-clg-name{
@@ -34,7 +43,10 @@
         text-align: center;
     }
     .intro-btn{
-        padding: 5px 20px;
-        font-size: 12px;
+        padding: 3px 15px;
+        font-size: 10px;
+    }
+    .intro-para{
+        font-size: 10px;
     }
 }
