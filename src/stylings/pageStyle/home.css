@@ -88,9 +88,7 @@
 .dept-nav-head {
      background-color: rgb(28, 0, 46);
 }
-
 .redirect-main {
-    width: 100vw;
     margin: 0px;
     height: fit-content;
     overflow-x: scroll;
@@ -103,10 +101,9 @@
 
 .dept-redirect {
     margin: 0 auto;
-    padding: 0px 20px;
+    padding: 0px 0px;
     display: flex;
-    width: 200vw;
-    background-color: none;
+    width: fit-content;
 }
 
 @media screen and (max-width:576px) {

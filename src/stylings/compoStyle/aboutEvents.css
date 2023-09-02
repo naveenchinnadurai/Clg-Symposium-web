@@ -2,14 +2,13 @@
     background-color: rgb(77, 65, 90);
     padding: 20px 15%;
 }
-
 .about-txt>p {
     margin: 10px 0px;
+    font-size: 18px;
 }
 .about-img {
     background-color: rgb(52, 25, 68);
-    width:90%;
-    height: 200px;
+    width:100%;
     margin: 0px 20px;
 }
 .poster-img-div{
@@ -18,7 +17,7 @@
     align-items: center;
 }
 .poster-img-div>h2{
-    color: black;
+    color: rgb(26, 3, 41);
     margin: 10px 0;
 }
 .poster-img{
@@ -41,6 +40,7 @@
     }
     .about-txt>p {
         font-size: 12px;
+        margin-bottom: 0px;
     }
     .about-img{
         margin: 0px;
@@ -56,5 +56,6 @@
     .poster-img-div>h2{
         font-size: 15px;
         margin: 0;
+        margin-bottom: 10px;
     }
 }

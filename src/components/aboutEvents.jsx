@@ -4,7 +4,7 @@ import poster from '../assets/poster.png'
 function AboutEvents() {
     return (
         <div className="about-event" data-aos="fade-in" data-aos-offset="0">
-            <h2>Know About Events</h2>
+            <h1>Know About Events</h1>
             <div className="about-event-content row">
                 <div className="about-txt">
                     <p>New beginnings, new friendships, and new horizons – all begin with a warm welcome to you. Delve into the heart of college life by signing up for our upcoming events.</p>
@@ -12,7 +12,7 @@ function AboutEvents() {
                 </div>
                 <div className="about-img"></div>
             </div>
-            <div className="col poster-img-div">
+            <div className="col poster-img-div" data-aos="fade-Up">
                 <h2>SYMPOSIUM POSTER</h2>
                 <img src={poster} alt="Poster-img" className='poster-img' />
             </div>

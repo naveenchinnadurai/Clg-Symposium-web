@@ -12,7 +12,7 @@ function Footer() {
         <div className="col footer-div-1">
           <h2 className='footer-head'  >SENGUNTHAR ENGINEERING COLLEGE</h2>
           <div className="row justify-sb footer-icons" >
-            <span><Insta /></span>
+            <span><Link to={'https://www.instagram.com/sengunthar_t.gode/'}><Insta /></Link></span>
             <span><FB /></span>
             <span><Mail /></span>
           </div>
@@ -25,7 +25,7 @@ function Footer() {
         </div>
         <div className="col align-center footer-div-3">
           <div className="row justify-center footer-img-div">
-            <Link className='link-tag' to='https://docs.google.com/forms/d/e/1FAIpQLSctdEF5mNAKptZJaaE8say8cbBSBvo6dxJlia5v6eK5mugjng/viewform?fbzx=2426317002727290543'>
+            <Link className='link-tag' to='https://docs.google.com/forms/d/e/1FAIpQLScv_W1hmSG9bEC-hzfnCku2fd32DxzX765lI17prWo-z9nWmw/viewform'>
               <img src={qr} alt="registration QR" className='qr-img' />
             </Link>
           </div>

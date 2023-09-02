@@ -40,7 +40,7 @@ function Home() {
                 </div>
                 <div className="banner-end txt-align-center">
                     <Link
-                        to='https://docs.google.com/forms/d/e/1FAIpQLSctdEF5mNAKptZJaaE8say8cbBSBvo6dxJlia5v6eK5mugjng/viewform?fbzx=2426317002727290543'
+                        to='https://docs.google.com/forms/d/e/1FAIpQLScv_W1hmSG9bEC-hzfnCku2fd32DxzX765lI17prWo-z9nWmw/viewform'
                         className='link-tag'
                     >Register Now</Link>
                     <p>Awesome adventures await, and you're at the forefront! The doors to unforgettable experiences are swinging open.</p>

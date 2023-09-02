@@ -3,6 +3,7 @@ import '../stylings/compoStyle/card.css'
 import { cardDetails } from '../scripts/cardInfo'
 function SimpleCards() {
     const displayCard = cardDetails.map((card) => {
+        const Icon=card.icon
         return (
             <div className="card" key={card.id} id={card.id}>
                 <h3>{card.title}</h3>

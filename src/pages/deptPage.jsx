@@ -10,6 +10,7 @@ import { BsArrowUpCircle as Top } from 'react-icons/bs'
 
 
 function DeptPage(props) {
+    window.scrollTo(0,0)
     const cse=deptDetails[0]
     const PPTSection = <EventSection
         eventName={cse.event1.eventTitle}
@@ -62,17 +63,17 @@ function DeptPage(props) {
         )
     }
     return (
-        <div className='deptpage'>
+        <div className='deptpage' data-aos='fade-in' data-aos-duration='2000'>
             <Element className="row justify-se deptpage-div-1">
                 <div className="deptpage-img"></div>
                 <div className="col align-center txt-align-center deptpage-title">
-                    <h1>Department of Computer Science and Engineering</h1>
+                    <h1>Department of Computer Science and Engineering-<span>ITrenders</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusamus fugit sequi officiis tempora maxime ullam nemo animi, id molestiae fugiat ipsam natus mollitia nam veritatis voluptatum expedita iste libero? Illum est in earum. Temporibus repudiandae odit rerum culpa omnis?</p>
                     <div className="deptpage-btns">
                         <Link
                             className='link-tag'
-                            to='https://docs.google.com/forms/d/e/1FAIpQLSctdEF5mNAKptZJaaE8say8cbBSBvo6dxJlia5v6eK5mugjng/viewform?fbzx=2426317002727290543'
-                        >Register Now</Link>
+                            to='https://docs.google.com/forms/d/e/1FAIpQLScv_W1hmSG9bEC-hzfnCku2fd32DxzX765lI17prWo-z9nWmw/viewform'
+                        >Register Here</Link>
                         <Link to='/home' className='link-tag'>Home </Link>
                     </div>
                 </div>
