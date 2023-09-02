@@ -8,7 +8,8 @@ import { deptDetails } from '../scripts/deptInfo'
 import { Link } from 'react-router-dom'
 import { Element, Link as ScrollLink } from 'react-scroll'
 import { BsArrowUpCircle as Top } from 'react-icons/bs'
-/* import poster from '../assets/poster.jpg'*/
+import MovingText from 'react-moving-text'
+import poster from '../assets/poster.jpg'
 function Home() {
     const displayCard = deptDetails.map((dept) => {
         return (
@@ -16,14 +17,20 @@ function Home() {
                 key={dept.id}
                 name={dept.nameShort}
                 txt={dept.deptTxt1}
-                deptment={dept}
             />
         )
     })
-
-
     return (
-        <div className='home'>
+        <MovingText
+            className='home'
+            type="fadeIn"
+            duration="3000ms"
+            delay="0s"
+            direction="normal"
+            timing="ease"
+            iteration="1"
+            fillMode="none"
+        >
             <div className="col align-center home-banner">
                 <div className="banner-head col align-center">
                     <h1>National Level Technical Symposium</h1>
@@ -41,16 +48,18 @@ function Home() {
             </div>
             <SimpleCards />
             <Element name="about" className="about"><AboutEvents /></Element>
-{/*             <div className="row poster-img-div">
+            <div className="row poster-img-div" data-aos="fade-in">
                 <img src={poster} alt="Poster-img" className='poster-img' />
-            </div> */}
-            <h1 className='txt-align-center dept-nav-head'>Departments</h1>
-            <Element className="txt-align-center redirect-main">
+            </div>
+            <h1 className='txt-align-center dept-nav-head' >Departments</h1>
+            <Element className="txt-align-center redirect-main" >
                 <div className="dept-redirect">{displayCard}</div>
             </Element>
-            <ScrollLink className="row btn-top" to='home-banner' smooth={true} duration={3000}><Top /></ScrollLink>
+            <div className="bottom-top-btn" data-aos="fade-in">
+                <ScrollLink className="row btn-top" to='home-banner' smooth={true} duration={3000}><Top /></ScrollLink>
+            </div>
             <Footer />
-        </div>
+        </MovingText>
     )
 }
 export default Home

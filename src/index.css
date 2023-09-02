@@ -13,14 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-html::-webkit-scrollbar{
-  width: 5px;
-}
 html::-webkit-scrollbar-track{
   background-color: grey;
+  width: 5px;
 }
 html::-webkit-scrollbar-thumb{
   background-color: rgb(39, 5, 94);
+  width: 5px;
 }
 *{
   margin: 0px;

@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom'
 import { Link as ScrollLink} from 'react-scroll'
 function Footer() {
   return (
-    <div className='col align-center footer'>
+    <div className='col align-center footer'  data-aos="fade-in">
       <div className="row justify-se  footer-div">
         <div className="col footer-div-1">
-          <h2 className='footer-head'>SENGUNTHAR ENGINEERING COLLEGE</h2>
-          <div className="row justify-sb footer-icons">
+          <h2 className='footer-head'  >SENGUNTHAR ENGINEERING COLLEGE</h2>
+          <div className="row justify-sb footer-icons" >
             <span><Insta /></span>
             <span><FB /></span>
             <span><Mail /></span>

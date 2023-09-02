@@ -2,7 +2,7 @@ import React from 'react'
 import '../stylings/compoStyle/aboutEvents.css'
 function AboutEvents() {
     return (
-        <div className="about-event">
+        <div className="about-event" data-aos="zoom-in-left" data-aos-delay="1"  data-aos-offset="0">
             <h2>Know About Events</h2>
             <div className="about-event-content row">
                 <div className="about-txt">

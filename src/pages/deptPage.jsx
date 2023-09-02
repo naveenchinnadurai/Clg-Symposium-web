@@ -10,7 +10,7 @@ import { BsArrowUpCircle as Top } from 'react-icons/bs'
 
 
 function DeptPage(props) {
-    const cse = deptDetails[0]
+    const cse=deptDetails[0]
     const PPTSection = <EventSection
         eventName={cse.event1.eventTitle}
         eventInfo={cse.event1.generalInfo}
@@ -81,11 +81,10 @@ function DeptPage(props) {
                 <h1>Event Details</h1>
                 <div className="row align-center event-details">
                     <div className="col event-navbar">
-                        <Link className='link-tag' onClick={switchPpt}>PPT</Link>
-                        <Link className='link-tag' onClick={switchCode}>Code Cracking</Link>
-                        <Link className='link-tag' onClick={switchPoster}>Poster Design</Link>
-                        <Link className='link-tag'>Non-technical Events</Link>
-
+                        <Link className='row align-center link-tag' onClick={switchPpt}>PPT</Link>
+                        <Link className='row align-center link-tag' onClick={switchCode}>Code Cracking</Link>
+                        <Link className='row align-center link-tag' onClick={switchPoster}>Poster Design</Link>
+                        <Link className='row align-center link-tag'>Non-technical Events</Link>
                     </div>
                     <div className="event-detail-switch-area">{eventArea}</div>
                 </div>
