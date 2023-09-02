@@ -3,7 +3,12 @@
     padding: 20px;
     height: 70vh;
     width: 100%;
+    background-image: url('../../assets/logo.png');
     justify-content: space-between;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode:multiply;
 }
 .banner-head>h1 {
     font-size: 50px;

@@ -32,8 +32,11 @@
     }
     .about-img{
         margin: 0px;
+        background-color:rgb(77, 65, 90);
         background-image: url('../../assets//poster.png');
         background-position: center;
         background-size: contain;
+        background-repeat: no-repeat;
+        margin: 5px 0;
     }
 }
