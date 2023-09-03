@@ -12,16 +12,16 @@ function Footer() {
         <div className="col footer-div-1">
           <h2 className='footer-head'  >SENGUNTHAR ENGINEERING COLLEGE</h2>
           <div className="row justify-sb footer-icons" >
-            <span><Link to={'https://www.instagram.com/sengunthar_t.gode/'}><Insta /></Link></span>
-            <span><FB /></span>
-            <span><Mail /></span>
+            <Link to={'https://www.instagram.com/sengunthar_t.gode/'} className='link-tag'><Insta /></Link>
+            <Link className='link-tag'><FB /></Link>
+            <Link className='link-tag'><Mail /></Link>
           </div>
         </div>
         <div className="col align-start footer-div-2">
           <Link className='link-tag' to='/home'>Home</Link>
-          <ScrollLink className='link-tag' smooth={true} to='dept-nav-head' duration={3000}>Departments</ScrollLink>
-          <ScrollLink to='about' smooth={true} className='link-tag' duration={3000}>About</ScrollLink>
           <Link className='link-tag'>Contact</Link>
+          <ScrollLink to='about' smooth={true} className='link-tag' duration={3000}>Welcome</ScrollLink>
+          <ScrollLink className='link-tag' smooth={true} to='dept-nav-head' duration={3000}>Departments</ScrollLink>
         </div>
         <div className="col align-center footer-div-3">
           <div className="row justify-center footer-img-div">

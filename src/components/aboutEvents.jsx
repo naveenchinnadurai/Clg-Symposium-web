@@ -4,7 +4,7 @@ import poster from '../assets/poster.png'
 function AboutEvents() {
     return (
         <div className="about-event" data-aos="fade-in" data-aos-offset="0">
-            <h1>Know About Events</h1>
+            <h2>Welcome to SAரYU-2k23</h2>
             <div className="about-event-content row">
                 <div className="about-txt">
                     <p>New beginnings, new friendships, and new horizons – all begin with a warm welcome to you. Delve into the heart of college life by signing up for our upcoming events.</p>
