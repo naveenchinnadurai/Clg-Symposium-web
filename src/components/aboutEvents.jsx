@@ -5,7 +5,7 @@ function AboutEvents() {
     return (
         <div className="about-event" data-aos="fade-in" data-aos-offset="0">
             <h2>Welcome to SAரYU-2k23</h2>
-            <div className="about-event-content row">
+            <div className="row about-event-content">
                 <div className="about-txt">
                     <p>New beginnings, new friendships, and new horizons – all begin with a warm welcome to you. Delve into the heart of college life by signing up for our upcoming events.</p>
                     <p>Discover a realm of intellect and innovation at our college's symposium event. Engage with visionary speakers, cutting-edge research, and vibrant discussions that span across various disciplines. Join us for a day that celebrates curiosity and fosters insightful dialogues, inspiring the next generation of thought leaders.</p>

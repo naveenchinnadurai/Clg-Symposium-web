@@ -3,7 +3,6 @@
     padding: 20px 15%;
 }
 .about-txt>p {
-    margin: 10px 0px;
     font-size: 18px;
 }
 .about-event>h2{
@@ -51,7 +50,7 @@
     }
     .about-txt>p {
         font-size: 12px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
     .about-img{
         margin: 0px;
