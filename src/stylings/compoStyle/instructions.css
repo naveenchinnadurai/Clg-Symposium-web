@@ -1,0 +1,78 @@
+.instruction-div {
+    width: 100vw;
+    background-image: linear-gradient(120deg,rgb(102, 8, 197),rgb(137, 54, 221),rgb(58, 3, 112));
+}
+.instruction-div>h1{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.instruction-content{
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+.i-div-1 {
+    width:40% ;
+    background-image: url('../../assets/instructionImg.png');
+    background-position: center;
+    background-size:cover;
+    background-position-y: -80px;
+    background-repeat: no-repeat;
+}
+
+.i-div-2 {
+    width: 60%;
+}
+
+.instru-div {
+    margin-bottom: 2px;
+    padding: 10px;
+}
+
+.instru-div>p {
+    font-size: 18px;
+    width: 90%;
+}
+
+.instru-div>span {
+    font-size: 20px;
+    background-color: rgb(49, 6, 92);
+    padding: 10px 20px;
+    border-radius: 50%;
+    height: fit-content;
+    margin: 0 10px;
+}
+
+@media screen and (max-width:576px) {
+    .instruction-div{
+        padding: 10px 0;
+    }
+    .instruction-div>h1{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .instruction-content{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+        border-radius: 0;
+    }
+    .instru-div>p {
+        font-size: 13px;
+        width: 100vw;
+    }
+    .instru-div>span {
+        font-size: 15px;
+        padding: 5px 11px;
+    }
+    .instru-div {
+        margin-bottom: 2px;
+        padding: 5px;
+        width:100vw;
+    }
+    .i-div-1{
+       display: contents;
+    }
+}

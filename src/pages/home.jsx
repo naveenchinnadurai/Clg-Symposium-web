@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 import { Element, Link as ScrollLink } from 'react-scroll'
 import { BsArrowUpCircle as Top } from 'react-icons/bs'
 import MovingText from 'react-moving-text'
+import Instructions from '../components/instructions'
 /* import { FaWhatsapp as WB } from 'react-icons/fa6'*/
 function Home() {
     const displayCard = deptDetails.map((dept) => {
@@ -47,6 +48,7 @@ function Home() {
             </div>
             <SimpleCards />
             <Element name="about" className="about"><AboutEvents /></Element>
+            <Instructions/>
             <h1 className='txt-align-center dept-nav-head' >Departments</h1>
             <Element className="txt-align-center redirect-main" >
                 <div className="dept-redirect">{displayCard}</div>
