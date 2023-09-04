@@ -55,8 +55,8 @@ function Home() {
             <div className="row bottom-top-btn">
                 <ScrollLink className="btn-top" to='home-banner' smooth={true} duration={3000}><Top /></ScrollLink>
             </div>
-            <Footer />
             <Instructions/>
+            <Footer />
         </MovingText>
     )
 }
