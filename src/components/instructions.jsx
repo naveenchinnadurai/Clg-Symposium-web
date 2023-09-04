@@ -1,5 +1,5 @@
 import React from 'react'
-import '../stylings/compoStyle/Instructions.css'
+import '../stylings/compoStyle/instructions.css'
 import { instr } from '../scripts/instructions'
 function Instructions() {
     const displayInstruction = instr.map((i) => {
