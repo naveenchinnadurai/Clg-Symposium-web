@@ -4,7 +4,7 @@ import { instr } from '../scripts/instructions'
 function Instructions() {
     const displayInstruction = instr.map((i) => {
         return (
-            <div className="row align-center instru-div">
+            <div className="row align-center instru-div" key={i.id}>
                 <span>{i.id}</span>
                 <p>{i.txt}</p>
             </div>
