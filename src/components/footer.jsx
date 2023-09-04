@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import { Link as ScrollLink} from 'react-scroll'
 function Footer() {
   return (
-    <div className='col align-center footer'  data-aos="fade-in">
+    <div className='col align-center footer'>
       <div className="row justify-se  footer-div">
         <div className="col footer-div-1">
           <h2 className='footer-head'  >SENGUNTHAR ENGINEERING COLLEGE</h2>

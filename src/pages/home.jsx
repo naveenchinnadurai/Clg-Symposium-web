@@ -43,6 +43,7 @@ function Home() {
                         to='https://docs.google.com/forms/d/e/1FAIpQLScv_W1hmSG9bEC-hzfnCku2fd32DxzX765lI17prWo-z9nWmw/viewform'
                         className='link-tag'
                     >Register Now</Link>
+                    <Link className='link-tag'>Contact Us</Link>
                     <p>Awesome adventures await, and you're at the forefront! The doors to unforgettable experiences are swinging open.</p>
                 </div>
             </div>
