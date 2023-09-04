@@ -15,8 +15,7 @@ function Home() {
         return (
             <DeptCard
                 key={dept.id}
-                name={dept.nameShort}
-                txt={dept.deptTxt1}
+                deptment={dept}
             />
         )
     })

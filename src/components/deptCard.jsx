@@ -8,9 +8,9 @@ function DeptCard(props) {
   return (
     <div className='col align-center deptcard' data-aos="zoom-in-up" data-aos-offset="1" data-aos-duration='2s'>
         <div className="deptcard-img"></div>
-        <h2 className="deptcard-title">{props.name}</h2>
-        <p className='txt-align-center'>{props.txt}</p>
-        <Link to='/deptpage' className='link-tag dept-link'>know more</Link>
+        <h2 className="deptcard-title">{dept.nameShort}</h2>
+        <p className='txt-align-center'>{dept.deptTxt1}</p>
+        <Link to='/deptpage' state={dept} className='link-tag dept-link'>know more</Link>
     </div>
   )
 }

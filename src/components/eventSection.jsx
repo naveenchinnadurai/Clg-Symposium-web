@@ -12,7 +12,7 @@ function EventSection(props) {
                     <div className="event-time">
                         <span>Date: {props.date}</span>
                         <span>Time: {props.time}</span>
-                        <p>{props.venue}</p>
+                        <p>Venue: {props.venue}</p>
                     </div>
                 </div>
                 <div className="ppt-div-2">
@@ -23,7 +23,7 @@ function EventSection(props) {
             </div>
             <div className="col event-incharge-details">
                 <h4>Event Co-Ordinator:</h4>
-                <span>Name:{props.coOrdinatorName}</span>
+                <span>Name : {props.coOrdinatorName}</span>
                 <span>Phn No. : {props.coOrdinatorPhn}</span>
             </div>
         </div>

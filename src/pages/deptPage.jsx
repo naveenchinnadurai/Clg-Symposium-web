@@ -5,14 +5,19 @@ import Footer from '../components/footer'
 import { useState } from 'react'
 import EventSection from '../components/eventSection'
 import { deptDetails } from '../scripts/deptInfo'
-import { Element,Link as ScrollLink } from 'react-scroll'
+import { Element, Link as ScrollLink } from 'react-scroll'
 import { BsArrowUpCircle as Top } from 'react-icons/bs'
+import { useLocation } from 'react-router-dom'
 
 
 function DeptPage(props) {
-    window.scrollTo(0,0)
-    const cse=deptDetails[0]
-    const PPTSection = <EventSection
+    const onOpen = () => {
+        window.scrollTo(0, 0)
+    }
+    onOpen()
+    const location = useLocation();
+    const cse = location.state;
+    const Event1 = <EventSection
         eventName={cse.event1.eventTitle}
         eventInfo={cse.event1.generalInfo}
         eventTxt={cse.event1.txt1}
@@ -24,50 +29,49 @@ function DeptPage(props) {
         coOrdinatorName={cse.event1.coOrdinator.name}
         coOrdinatorPhn={cse.event1.coOrdinator.phn}
     />
-    const [eventArea, setEventArea] = useState(PPTSection)
+    const Event2 = <EventSection
+        eventName={cse.event2.eventTitle}
+        eventInfo={cse.event2.generalInfo}
+        eventTxt={cse.event2.txt1}
+        date={cse.event2.date}
+        time={cse.event2.time}
+        venue={cse.event2.venue}
+        title2={cse.event2.extraInfo.title}
+        eventInfo1={cse.event2.extraInfo.txt1}
+        eventInfo2={cse.event2.extraInfo.txt2}
+        coOrdinatorName={cse.event2.coOrdinator.name}
+        coOrdinatorPhn={cse.event2.coOrdinator.phn}
+    />
+    const Event3 = <EventSection
+        eventName={cse.event3.eventTitle}
+        eventInfo={cse.event3.generalInfo}
+        eventTxt={cse.event3.txt1}
+        date={cse.event3.date}
+        time={cse.event3.time}
+        venue={cse.event3.venue}
+        title2={cse.event3.extraInfo.title}
+        eventInfo1={cse.event3.extraInfo.txt1}
+        eventInfo2={cse.event3.extraInfo.txt2}
+        coOrdinatorName={cse.event3.coOrdinator.name}
+        coOrdinatorPhn={cse.event3.coOrdinator.phn}
+    />
+    const [eventArea, setEventArea] = useState(Event2)
+    const switchPpt=()=>{
+        setEventArea(Event1)
+    }
+    const switchCode=()=>{
+        setEventArea(Event2)
+    }
+    const switchPoster=()=>{
+        setEventArea(Event3)
+    }
 
-    const switchPpt = () => {
-        setEventArea(PPTSection)
-    }
-    const switchCode = () => {
-        setEventArea(
-            <EventSection
-                eventName={cse.event2.eventTitle}
-                eventInfo={cse.event2.generalInfo}
-                eventTxt={cse.event1.txt1}
-                date={cse.event2.date}
-                time={cse.event2.time}
-                venue={cse.event2.venue}
-                title2={cse.event2.extraInfo.title}
-                eventInfo1={cse.event2.extraInfo.txt1}
-                eventInfo2={cse.event2.extraInfo.txt2}
-                coOrdinatorName={cse.event2.coOrdinator.name}
-                coOrdinatorPhn={cse.event2.coOrdinator.phn}
-            />
-        )
-    }
-    const switchPoster = () => {
-        setEventArea(
-            <EventSection
-                eventName='Poster Design'
-                eventInfo='sed laborum. Aliquid commodi ad quis natus neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. nemo at ad voluptatum consectetur culpa delectus explicabo quam nonTotam, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-                eventTxt='Indivual participation, no team participation allowed'
-                date='27/09/2023'
-                time='11:45AM'
-                venue='CSE lab-I,1nd floor,Main Block'
-                title2='Theme'
-                eventInfo2='Theme will be announced on the spot, can use any type design tools.'
-                coOrdinatorName='S.Jana Tony(st)CSE-III yr'
-                coOrdinatorPhn='7895642631'
-            />
-        )
-    }
     return (
         <div className='deptpage' data-aos='fade-in' data-aos-duration='2000'>
             <Element className="row justify-se deptpage-div-1">
                 <div className="deptpage-img"></div>
                 <div className="col align-center txt-align-center deptpage-title">
-                    <h1>Department of Computer Science and Engineering-<span>ITrenders</span></h1>
+                    <h1>Department of {cse.deptName}-<span>{cse.deptSpecialName}</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusamus fugit sequi officiis tempora maxime ullam nemo animi, id molestiae fugiat ipsam natus mollitia nam veritatis voluptatum expedita iste libero? Illum est in earum. Temporibus repudiandae odit rerum culpa omnis?</p>
                     <div className="deptpage-btns">
                         <Link
@@ -83,8 +87,8 @@ function DeptPage(props) {
                 <div className="row align-center event-details">
                     <div className="col event-navbar">
                         <Link className='row align-center link-tag' onClick={switchPpt}>PPT</Link>
-                        <Link className='row align-center link-tag' onClick={switchCode}>Code Cracking</Link>
-                        <Link className='row align-center link-tag' onClick={switchPoster}>Poster Design</Link>
+                        <Link className='row align-center link-tag' onClick={switchCode}>{cse.event2.eventTitle}</Link>
+                        <Link className='row align-center link-tag' onClick={switchPoster}>{cse.event3.eventTitle}</Link>
                         <Link className='row align-center link-tag'>Non-technical Events</Link>
                     </div>
                     <div className="event-detail-switch-area">{eventArea}</div>

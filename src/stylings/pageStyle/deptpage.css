@@ -85,7 +85,7 @@
     background-color: rgb(45, 1, 88);
 }
 .event-detail-switch-area{
-    height: 70vh;
+    height: fit-content;
     width: 90vw;
 }
 
