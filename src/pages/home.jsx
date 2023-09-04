@@ -48,7 +48,6 @@ function Home() {
             </div>
             <SimpleCards />
             <Element name="about" className="about"><AboutEvents /></Element>
-            <Instructions/>
             <h1 className='txt-align-center dept-nav-head' >Departments</h1>
             <Element className="txt-align-center redirect-main" >
                 <div className="dept-redirect">{displayCard}</div>
@@ -57,6 +56,7 @@ function Home() {
                 <ScrollLink className="btn-top" to='home-banner' smooth={true} duration={3000}><Top /></ScrollLink>
             </div>
             <Footer />
+            <Instructions/>
         </MovingText>
     )
 }
