@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Intro/>}/>
         <Route path='/home' element={<Home/>}/>
-        <Route path='/deptpage' element={<DeptPage onOpen={ window.scrollTo(0,0)}/>}></Route>
+        <Route path='/deptpage' element={<DeptPage />}></Route>
       </Routes>
     </div>
   )

@@ -1,6 +1,4 @@
-/* import {MdDateRange as Icon1} from 'react-icons/md'
- */
-export const cardDetails=[
+export const symDetails=[
     {
         id:'card-1',
         title:'Date and time',
@@ -17,6 +15,6 @@ export const cardDetails=[
         id:'card-3',
         title:'Rs.200/head',
         content:'Refreshment and Lunch will be provided.',
-        content1:' Accomadation will be provided based on requirement.'    
+        content1:' Accomadation will be provided based on requirement.'
     }
 ]

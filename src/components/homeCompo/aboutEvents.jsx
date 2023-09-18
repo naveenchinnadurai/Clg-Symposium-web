@@ -1,6 +1,6 @@
 import React from 'react'
-import '../stylings/compoStyle/aboutEvents.css'
-import poster from '../assets/poster.png'
+import '../../stylings/compoStyle/homeStyles/aboutEvents.css'
+import poster from '../../assets/poster.png'
 function AboutEvents() {
     return (
         <div className="about-event" data-aos="fade-in" data-aos-offset="0">
@@ -12,7 +12,7 @@ function AboutEvents() {
                 </div>
                 <div className="about-img"></div>
             </div>
-            <div className="col poster-img-div" data-aos="fade-Up">
+            <div className="col poster-img-div">
                 <h2>SYMPOSIUM POSTER</h2>
                 <img src={poster} alt="Poster-img" className='poster-img' />
             </div>

@@ -1,5 +1,6 @@
 import React from 'react'
-import '../stylings/compoStyle/ppt.css'
+import '../../stylings/compoStyle/deptPageStyles/eventSection.css'
+
 function EventSection(props) {
     return (
         <div className="txt-align-left event-details-div">

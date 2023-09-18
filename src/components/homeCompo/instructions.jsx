@@ -1,6 +1,7 @@
 import React from 'react'
-import '../stylings/compoStyle/instructions.css'
-import { instr } from '../scripts/instructions'
+import '../../stylings/compoStyle/homeStyles/instructions.css'
+import { instr } from '../../scripts/instructions'
+
 function Instructions() {
     const displayInstruction = instr.map((i) => {
         return (

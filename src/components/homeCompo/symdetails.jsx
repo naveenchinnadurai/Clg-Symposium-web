@@ -1,8 +1,8 @@
 import React from 'react'
-import '../stylings/compoStyle/card.css'
-import { cardDetails } from '../scripts/cardInfo'
-function SimpleCards() {
-    const displayCard = cardDetails.map((card) => {
+import '../../stylings/compoStyle/homeStyles/card.css'
+import { symDetails } from '../../scripts/cardInfo'
+function SymDetailsCard() {
+    const displayCard = symDetails.map((card) => {
         const Icon=card.icon
         return (
             <div className="card" key={card.id} id={card.id}>
@@ -17,4 +17,4 @@ function SimpleCards() {
     )
 }
 
-export default SimpleCards
+export default SymDetailsCard

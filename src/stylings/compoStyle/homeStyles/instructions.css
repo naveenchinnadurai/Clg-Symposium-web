@@ -14,7 +14,7 @@
 }
 .i-div-1 {
     width:40% ;
-    background-image: url('../../assets/instructionImg.png');
+    background-image: url('../../../assets/instructionImg.png');
     background-position: center;
     background-size:cover;
     background-position-y: -80px;
