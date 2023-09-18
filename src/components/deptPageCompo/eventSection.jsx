@@ -2,13 +2,22 @@ import React from 'react'
 import '../../stylings/compoStyle/deptPageStyles/eventSection.css'
 
 function EventSection(props) {
+    let instr=props.eventInfo
+    const displayGeneralInfo=instr.map((i)=>{
+        return(
+            <div className="general-instruction" key={instr.indexOf(i)}>
+                <span>{instr.indexOf(i)+1}) </span>
+                <span>{i}</span>
+            </div>
+        )
+    })
     return (
         <div className="txt-align-left event-details-div">
             <h2>{props.eventName}</h2>
             <div className="row justify-sb ppt-main-div">
                 <div className="ppt-div-1">
                     <h3>General Instructions</h3>
-                    <p>{props.eventInfo}</p>
+                    <div className="general-i">{displayGeneralInfo}</div>
                     <p className='ppt-date'>{props.eventTxt}</p>
                     <div className="event-time">
                         <span>Date: {props.date}</span>

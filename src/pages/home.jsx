@@ -11,11 +11,11 @@ import { BsArrowUpCircle as Top } from 'react-icons/bs'
 import MovingText from 'react-moving-text'
 import Instructions from '../components/homeCompo/instructions'
 function Home() {
-    const displayCard = deptDetails.map((dept) => {
+    const displayCard = deptDetails.map((dpt) => {
         return (
             <DeptCard
-                key={dept.id}
-                deptment={dept}
+                key={dpt.id}
+                deptment={dpt}
             />
         )
     })
