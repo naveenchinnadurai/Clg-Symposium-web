@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../stylings/compoStyle/deptPageStyles/deptcard.css'
+import '../../stylings/compoStyle/deptPageStyles/deptCard.css'
 
 import { Link } from 'react-router-dom'
 
