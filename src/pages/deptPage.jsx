@@ -7,7 +7,6 @@ import EventSection from '../components/deptPageCompo/eventSection'
 import { Element, Link as ScrollLink } from 'react-scroll'
 import { BsArrowUpCircle as Top } from 'react-icons/bs'
 function DeptPage(props) {
-    alert("we use cookies to store details of departments, allow cookies to make the web page works normally")
     const deptObj = JSON.parse(document.cookie)
     const [event, setEvent] = useState(deptObj.event1)
     const switchEvent1 = () => {
