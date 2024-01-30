@@ -22,7 +22,9 @@ function DeptPage(props) {
     return (
         <div className='deptpage' data-aos='fade-in' data-aos-duration='2000'>
             <Element className="row justify-se deptpage-div-1">
-                <div className="deptpage-img"></div>
+                <div className="deptpage-img">
+                    <img src={deptObj.img}/>
+                </div>
                 <div className="col align-center txt-align-center deptpage-title">
                     <h1>Department of {deptObj.deptName}-<span>{deptObj.deptSpecialName}</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusamus fugit sequi officiis tempora maxime ullam nemo animi, id molestiae fugiat ipsam natus mollitia nam veritatis voluptatum expedita iste libero? Illum est in earum. Temporibus repudiandae odit rerum culpa omnis?</p>

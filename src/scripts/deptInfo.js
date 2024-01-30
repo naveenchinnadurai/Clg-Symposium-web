@@ -1,8 +1,20 @@
+import img1 from '../assets/deptLogo/CSE.jpg'
+import img2 from '../assets/deptLogo/ECE.jpg'
+import img3 from '../assets/deptLogo/EEE.jpg'
+import img4 from '../assets/deptLogo/Civil.jpeg'
+import img5 from '../assets/deptLogo/Mech.jpeg'
+import img6 from '../assets/deptLogo/MBA.jpeg'
+import img7 from '../assets/deptLogo/MEE.jpeg'
+import img8 from '../assets/deptLogo/Robotics.jpeg'
+
+import img9 from '../assets/deptLogo/AI&DS.jpg'
+import img10 from '../assets/deptLogo/IT.jpeg'
 export const deptDetails=[
     {
         id:1,
         deptName:'Computer Science and Engineering',
         deptSpecialName:"ITrenders",
+        img:img1,
         nameShort:'CSE',
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
         to:'/deptpage',
@@ -77,6 +89,7 @@ export const deptDetails=[
         id:2,
         deptName:'Electronics & Communication Engineering',
         nameShort:'ECE',
+        img:img2,
         to:'/deptpage',
         deptSpecialName:"Tragga Talenta",
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
@@ -150,6 +163,7 @@ export const deptDetails=[
         deptName:'Information Technology',
         deptSpecialName:"Amaze-IT",
         nameShort:'IT',
+        img:img10,
         to:'/deptpage',
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
         event1:{
@@ -223,6 +237,7 @@ export const deptDetails=[
         id:4,
         deptName:'Artificial Intelligence and Data Science',
         deptSpecialName:"Arti",
+        img:img9,
         nameShort:'AI & DS',
         to:'/deptpage',
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
@@ -297,6 +312,7 @@ export const deptDetails=[
         id:5,
         deptName:'Civil Engineering',
         deptSpecialName:"Asthivara",
+        img:img4,
         nameShort:'Civil',
         to:'/deptpage',
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
@@ -372,6 +388,7 @@ export const deptDetails=[
         deptName:'Mechanical Engineering ',
         deptSpecialName:"Gear Mech",
         nameShort:'MECH',
+        img:img5,
         to:'/deptpage',
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
         event1:{
@@ -446,6 +463,7 @@ export const deptDetails=[
         deptName:'Electrical and Electronic Engineering',
         deptSpecialName:"Lumin-US",
         nameShort:'EEE',
+        img:img3,
         to:'/deptpage',
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
         event1:{
@@ -519,6 +537,7 @@ export const deptDetails=[
         id:8,
         deptName:'Medical Electronics',
         deptSpecialName:"I AM",
+        img:img7,
         nameShort:'MEE',
         to:'/deptpage',
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
@@ -593,6 +612,7 @@ export const deptDetails=[
         id:9,
         deptName:'Robotics and Automation',
         deptSpecialName:"Roam",
+        img:img8,
         nameShort:'ROAM',
         to:'/deptpage',
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
@@ -668,6 +688,7 @@ export const deptDetails=[
         deptName:'Management of Business Administration',
         deptSpecialName:"AIMS",
         nameShort:'MBA',
+        img:img6,
         to:'/deptpage',
         deptTxt1:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, cumque. Veniam eligendi ipsa non qui.',
         event1:{

@@ -48,14 +48,16 @@ function Home() {
             </div>
             <SymDetailsCard />
             <Element name="about" className="about"><AboutEvents /></Element>
-            <h1 className='txt-align-center dept-nav-head' >Departments</h1>
-            <Element className="txt-align-center redirect-main" >
-                <div className="dept-redirect">{displayCard}</div>
-            </Element>
+            <div className='redirect-main'>
+                <h1 className='txt-align-center' style={{marginBottom:20}}>Departments</h1>
+                <Element className="txt-align-center" >
+                    <div className="dept-redirect">{displayCard}</div>
+                </Element>
+            </div>
+            <Instructions />
             <div className="row bottom-top-btn">
                 <ScrollLink className="btn-top" to='home-banner' smooth={true} duration={3000}><Top /></ScrollLink>
             </div>
-            <Instructions/>
             <Footer />
         </MovingText>
     )
