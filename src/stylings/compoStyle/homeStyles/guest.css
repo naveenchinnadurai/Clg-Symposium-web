@@ -1,0 +1,23 @@
+.guest-card {
+    background-color: rgb(157, 119, 196);
+    width: 20%;
+    min-width: 280px;
+    padding: 20px 0;
+    border-radius: 10px;
+
+}
+.guest-card:hover{
+    scale: 1.1;
+    transition: 700ms;
+}
+.guest-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.guest-img>img {
+    height: 100%;
+    width: 100%;
+}
