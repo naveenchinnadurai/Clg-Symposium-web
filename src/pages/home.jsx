@@ -12,6 +12,7 @@ import MovingText from 'react-moving-text'
 import Instructions from '../components/homeCompo/instructions'
 import GuestCard from '../components/homeCompo/guestCard'
 import guestInfo from '../scripts/guestInfo'
+import Contact from '../components/homeCompo/contact'
 function Home() {
     const displayCard = deptDetails.map((dpt) => {
         return (
@@ -82,6 +83,7 @@ function Home() {
                 </div>
                 <span className="home-btn">Register Now</span>
             </div>
+            <Contact/>
             <div className="row bottom-top-btn">
                 <ScrollLink className="btn-top" to='home-banner' smooth={true} duration={3000}><Top /></ScrollLink>
             </div>
