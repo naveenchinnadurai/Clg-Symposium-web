@@ -6,7 +6,7 @@ import { LuMailOpen as Mail} from "react-icons/lu";
 function Contact() {
     return (
         <div className='row contact-main-div'>
-            <div className="col align-center contact-text">
+            <div className="col align-center justify-center contact-text">
                 <h1>Contact us</h1>
                 <div className="col contact-inputs">
                     <input type="text" placeholder='Name' />
@@ -23,6 +23,7 @@ function Contact() {
                                     title={e.title}
                                     text={e.text}
                                     key={e.id}
+                                    className="contactcard-div"
                                 />
                             )
                         })
@@ -49,7 +50,7 @@ const contactInfo=[
 ]
 function ContactCard(props) {
     return(
-        <div className="row align-center contactCard" key={props.key}>
+        <div className={`row align-center contactCard ${props.className}`} key={props.key}>
             <span>{props.icon}</span>
             <div className='col justify-center'>
                 <h4>{props.title}</h4>
