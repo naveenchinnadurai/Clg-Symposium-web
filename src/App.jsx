@@ -1,17 +1,17 @@
-import './App.css'
+import AOS from 'aos'
+import { Route, Routes } from 'react-router-dom'
 import DeptPage from './pages/deptPage'
 import Home from './pages/home'
-import Intro from './pages/intro'
-import {Route,Routes} from 'react-router-dom'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Splash from './pages/splash'
+import 'aos/dist/aos.css'
+import './App.css'
 AOS.init();
 function App() {
-  return(
-    <div className="app">
+  return (
+    <div className="text-white">
       <Routes>
-        <Route path='/' element={<Intro/>}/>
-        <Route path='/home' element={<Home/>}/>
+        <Route path='/' element={<Splash />} />
+        <Route path='/home' element={<Home />} />
         <Route path='/deptpage' element={<DeptPage />}></Route>
       </Routes>
     </div>

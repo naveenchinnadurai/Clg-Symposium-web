@@ -6,10 +6,10 @@ import img5 from '../assets/deptLogo/Mech.jpeg'
 import img6 from '../assets/deptLogo/MBA.jpeg'
 import img7 from '../assets/deptLogo/MEE.jpeg'
 import img8 from '../assets/deptLogo/Robotics.jpeg'
-
 import img9 from '../assets/deptLogo/AI&DS.jpg'
 import img10 from '../assets/deptLogo/IT.jpeg'
-export const deptDetails=[
+
+export const eventDetails=[
     {
         id:1,
         deptName:'Computer Science and Engineering',
