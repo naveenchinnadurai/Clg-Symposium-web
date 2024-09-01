@@ -16,11 +16,11 @@ function DeptPage(props) {
 
     return (
         <div className="min-h-screen" data-aos="fade-in" data-aos-duration="2000">
-            <Element name="deptpage-div-1" className="flex flex-row justify-between p-8">
-                <div className="w-1/3 flex justify-center items-center">
-                    <img src={deptObj.img} alt={deptObj.deptName} className="h-60 w-60 rounded-full object-cover" />
+            <Element name="deptpage-div-1" className="flex flex-col md:flex-row justify-between p-8">
+                <div className="md:w-1/3 flex md:justify-center items-center">
+                    <img src={deptObj.img} alt={deptObj.deptName} className="h-52 md:h-60 w-52 md:w-60 rounded-full object-cover" />
                 </div>
-                <div className="w-2/3">
+                <div className="w-full md:w-2/3">
                     <h1 className="text-4xl font-bold text-white">
                         Department of {deptObj.deptName} <span className="text-purple-300">({deptObj.deptSpecialName})</span>
                     </h1>
@@ -31,7 +31,7 @@ function DeptPage(props) {
                         <Link
                             to="https://docs.google.com/forms/d/e/1FAIpQLScv_W1hmSG9bEC-hzfnCku2fd32DxzX765lI17prWo-z9nWmw/viewform"
                             target="_blank">
-                            <Button text="Register Here" />
+                            <Button text="Register" />
                         </Link>
                         <Link to="/home" >
                             <Button text="Home" />
@@ -40,10 +40,10 @@ function DeptPage(props) {
                 </div>
             </Element >
 
-            <div className="text-center p-8">
+            <div className="text-center p-2 md:p-8">
                 <h1 className="text-3xl font-bold text-white mb-4">Event Details</h1>
-                <div className="flex gap-2 justify-between">
-                    <div className="w-1/3 flex flex-col">
+                <div className="flex flex-col  md:flex-row gap-2 justify-between">
+                    <div className="w-full justify-center gap-1 md:w-1/3 flex md:flex-col">
                         <Link className="bg-gray-700 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={switchEvent1}>
                             PPT
                         </Link>
@@ -54,7 +54,7 @@ function DeptPage(props) {
                             {deptObj.event3.eventTitle}
                         </Link>
                     </div>
-                    <div className="w-2/3 z-10">
+                    <div className="w-full md:w-2/3 z-10">
                         <EventSection
                             eventName={event.eventTitle}
                             eventInfo={event.generalInfo}

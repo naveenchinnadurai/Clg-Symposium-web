@@ -62,7 +62,7 @@ const CountDown = () => {
     }, [startCountDown]);
 
     return (
-            <div className="flex flex-col items-center justify-center w-full h-full gap-8 sm:gap-16">
+            <div className="flex flex-col items-center justify-center w-fit h-fit gap-8 sm:gap-16">
                 <div className="flex justify-center gap-3 sm:gap-8">
                     <div className="flex flex-col gap-5 relative">
                         <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#343650] rounded-lg">
