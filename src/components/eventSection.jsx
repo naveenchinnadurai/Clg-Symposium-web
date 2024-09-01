@@ -12,10 +12,9 @@ function EventSection(props) {
     });
 
     return (
-        <div className="text-left bg-purple-900 p-4 text-white">
+        <div className="text-left bg-slate-900 z-10 p-4 text-white">
             <h2 className="text-2xl">{props.eventName}</h2>
             <div className="flex flex-col sm:flex-row justify-between">
-                {/* ppt-div-1 */}
                 <div className="w-full sm:w-7/12">
                     <h3 className="text-xl text-pink-500">General Instructions</h3>
                     <div className="general-i">{displayGeneralInfo}</div>
@@ -26,7 +25,6 @@ function EventSection(props) {
                         <p className="my-2">Venue: {props.venue}</p>
                     </div>
                 </div>
-                {/* ppt-div-2 */}
                 <div className="w-full sm:w-4/12 pl-4 sm:pl-8">
                     <h4 className="text-lg">{props.title2}</h4>
                     <p className="my-1">{props.eventInfo1}</p>

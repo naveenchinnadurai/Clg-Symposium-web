@@ -5,17 +5,17 @@ import { LuMailOpen as Mail } from 'react-icons/lu';
 
 function Contact() {
     return (
-        <div className="flex flex-col md:flex-row bg-purple-600 w-4/5 md:w-5/6 mx-auto p-5 !py-10 items-center justify-center relative">
-            <div className="flex flex-col items-center justify-center w-full md:w-1/2 p-5 gap-3">
-                <h1 className="text-3xl font-semibold text-white mb-4">Contact us</h1>
-                <div className="flex flex-col items-center gap-4 w-full">
+        <div className="flex flex-col-reverse sm:flex-row-reverse w-full md:w-5/6 mx-auto p-5 !py-10 items-center justify-center relative gap-1 md:gap-10">
+            <div className="flex flex-col w-full md:w-fit py-5">
+                <h1 className="text-3xl font-semibold text-white mb-4 text-center sm:text-left">Contact us</h1>
+                <div className="flex flex-col gap-4 w-full sm:flex-row flex-wrap">
                     {contactInfo.map((e) => (
-                        <div className='flex items-center gap-4 p-2'>
-                            <span className="text-2xl">{e.icon}</span>
-                            <div className="flex flex-col">
+                        <div className='flex flex-col items-center justify-center sm:items-start gap-2 p-2 w-fit sm:w-full '>
+                            <div className="flex gap-2 items-center justify-center">
+                                <span className="text-xl">{e.icon}</span>
                                 <h4 className="text-lg font-semibold">{e.title}</h4>
-                                <p className="text-sm">{e.text}</p>
                             </div>
+                            <p className="text-sm">{e.text}</p>
                         </div>
                     ))}
                 </div>
@@ -43,7 +43,13 @@ const contactInfo = [
         id: 2,
         icon: <Mail />,
         title: 'E-Mail',
-        text: 'sectrichengode@secteg.co.in'
+        text: 'sectrichengode@.co.in'
+    },
+    {
+        id: 3,
+        icon: <Insta />,
+        title: 'Instagram',
+        text: 'sengunthar.t.gode'
     }
 ];
 

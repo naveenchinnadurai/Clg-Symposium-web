@@ -1,37 +1,42 @@
 import React from 'react'
-import qr from '../assets/registrationQr.jpg'
 import { FaInstagram as Insta, FaFacebookSquare as FB } from 'react-icons/fa'
 import { FiMail as Mail } from 'react-icons/fi'
-import { Link } from 'react-router-dom'
-import { Link as ScrollLink} from 'react-scroll'
-function Footer() {
-  return (
-    <div className='bg-slate-500'>
-      <div className="flex justify-evenly">
-        <div className="flex flex-col justify-evenly">
-          <h2 className='text-2xl font-serif'  >SENGUNTHAR ENGINEERING COLLEGE</h2>
-          <div className="flex justify-evenly text-3xl" >
-            <Link to={'https://www.instagram.com/sengunthar_t.gode/'} className='hover:text-blue-400'><Insta /></Link>
-            <Link className='hover:text-blue-400'><FB /></Link>
-            <Link className='hover:text-blue-400'><Mail /></Link>
-          </div>
-        </div>
-        <div className="flex flex-col justify-evenly ">
-          <Link className='hover:text-blue-400' to='/home'>Home</Link>
-          <Link className='hover:text-blue-400'>Contact</Link>
-          <ScrollLink to='about' smooth={true} className='hover:text-blue-400' duration={3000}>Welcome</ScrollLink>
-          <ScrollLink className='hover:text-blue-400' smooth={true} to='dept-nav-head' duration={3000}>Departments</ScrollLink>
-        </div>
-          <div className=" flex flex-col gap-2 justify-center">
-            <Link className='' to='https://docs.google.com/forms/d/e/1FAIpQLScv_W1hmSG9bEC-hzfnCku2fd32DxzX765lI17prWo-z9nWmw/viewform'>
-              <img src={qr} alt="registration QR" className='rounded-lg w-32' />
-            </Link>
-            <p>Register Now to Particate </p>
-          </div>
-      </div>
-      <p className='flex justify-center mt-3'>&copy;All copyrights reserved for SEC-2023</p>
-    </div>
+import { Link, useLocation } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
 
+
+export function Footer() {
+  const path = useLocation()
+  if (location.pathname === "/") {
+    return null;
+  }
+  return (
+    <footer className="flex justify-evenly flex-wrap py-1 container relative z-10 mx-auto px-2 pt-3 bg-opacity-40 bg-black rounded-t-3xl">
+      <div className="w-fit p-2">
+        <ul className=" flex flex-wrap items-center gap-5">
+          {
+            [{ text: "Home", to: "#" }, { text: "Departments", to: "#" }, { text: "Our Website", to: "#" }, { text: "Developer Team", to: "#" }].map((e, i) => {
+              return (
+                <li className="p-0">
+                  <Link className="font-medium text-gray-400 hover:text-gray-700" to={e.to}> {e.text} </Link>
+                </li>
+              )
+            })
+          }
+        </ul>
+      </div>
+      <div className="w-fit p-2 gap-3 flex flex-wrap items-center justify-center  text-black">
+        {
+          [{ icon: <FB />, to: "#" }, { icon: <Insta />, to: "#" }, { icon: <Mail />, to: "#" }].map((e, i) => {
+            return (
+              <Link to="#" className="flex p-2 text-white text-xl items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
+                {e.icon}
+              </Link>
+            )
+          })
+        }
+      </div>
+    </footer>
   )
 }
 
