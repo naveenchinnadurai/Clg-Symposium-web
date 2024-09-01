@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { Link as ScrollLink} from 'react-scroll'
 function Footer() {
   return (
-    <div className='bg-slate-500 pt-4'>
+    <div className='bg-slate-500'>
       <div className="flex justify-evenly">
         <div className="flex flex-col justify-evenly">
           <h2 className='text-2xl font-serif'  >SENGUNTHAR ENGINEERING COLLEGE</h2>

@@ -3,7 +3,7 @@ import { instruction } from '../scripts/data';
 
 function Instructions() {
     return (
-        <div className='w-full bg-[#4d415a] py-5'>
+        <div className='w-full py-5'>
             <h1 className='text-center text-3xl font-medium tracking-wider mb-4'>General Instruction</h1>
             <div className="flex flex-col sm:flex-row justify-between w-4/5 mx-auto sm:py-5 px-5 sm:px-0 sm:rounded-xl">
                 <div className="hidden sm:block w-2/5 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(../../../assets/instructionImg.png)', backgroundPositionY: '-80px' }}></div>

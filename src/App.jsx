@@ -4,7 +4,7 @@ import DeptPage from './pages/deptPage'
 import Home from './pages/home'
 import Splash from './pages/splash'
 import 'aos/dist/aos.css'
-import './App.css'
+import './global.css'
 AOS.init();
 function App() {
   return (
