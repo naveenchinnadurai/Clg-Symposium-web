@@ -3,6 +3,8 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import DeptPage from './pages/deptPage'
 import Home from './pages/home'
 import Splash from './pages/splash'
+import DeptCard from './components/deptCard';
+import Timeline from './components/Timeline';
 import 'aos/dist/aos.css'
 import './global.css'
 import NotFound from './pages/notFoundPage'
@@ -25,6 +27,8 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/deptPage' element={<DeptPage />}></Route>
         <Route path='/*' element={<NotFound />} />
+        <Route path="/deptCard" element={<DeptCard />} />
+        <Route path="/timeline" element={<Timeline />} />
       </Routes>
       <Footer />
     </div>

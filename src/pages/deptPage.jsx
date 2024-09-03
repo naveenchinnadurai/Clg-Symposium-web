@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Element, Link as ScrollLink } from 'react-scroll';
-import { BsArrowUpCircle as Top } from 'react-icons/bs';
-import Footer from '../components/footer';
-import EventSection from '../components/eventSection';
+import { Element } from 'react-scroll';
 import Button from '../components/Button';
+import EventSection from '../components/eventSection';
 
 function DeptPage(props) {
     const deptObj = JSON.parse(document.cookie);
+    console.log(deptObj);
     const [event, setEvent] = useState(deptObj.event1);
 
-    const switchEvent1 = () => setEvent(deptObj.event1);
     const switchEvent2 = () => setEvent(deptObj.event2);
     const switchEvent3 = () => setEvent(deptObj.event3);
 
@@ -43,14 +41,14 @@ function DeptPage(props) {
             <div className="text-center p-2 md:p-8">
                 <h1 className="text-3xl font-bold text-white mb-4">Event Details</h1>
                 <div className="flex flex-col  md:flex-row gap-2 justify-between">
-                    <div className="w-full justify-center gap-1 md:w-1/3 flex md:flex-col">
-                        <Link className="bg-gray-700 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={switchEvent1}>
+                    <div className="w-full justify-center md:justify-start gap-1 md:w-1/3 flex md:flex-col">
+                        <Link className="bg-gray-700 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={() => { setEvent(deptObj.event1); console.log(deptObj.event1) }}>
                             PPT
                         </Link>
-                        <Link className="bg-gray-700 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={switchEvent2}>
+                        <Link className="bg-gray-700 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={() => setEvent(deptObj.event2)}>
                             {deptObj.event2.eventTitle}
                         </Link>
-                        <Link className="bg-gray-800 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={switchEvent3}>
+                        <Link className="bg-gray-800 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={() => setEvent(deptObj.event3)}>
                             {deptObj.event3.eventTitle}
                         </Link>
                     </div>

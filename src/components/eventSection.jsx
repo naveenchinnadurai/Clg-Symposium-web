@@ -5,7 +5,7 @@ function EventSection(props) {
     const displayGeneralInfo = instr.map((i) => {
         return (
             <div className="my-2" key={instr.indexOf(i)}>
-                <span>{instr.indexOf(i) + 1}) </span>
+                <span>{instr.indexOf(i) + 1} </span>
                 <span>{i}</span>
             </div>
         );
