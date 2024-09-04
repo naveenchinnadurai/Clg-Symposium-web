@@ -39,14 +39,16 @@ function DeptPage() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusamus fugit sequi officiis tempora maxime ullam nemo animi, id molestiae fugiat ipsam natus mollitia nam veritatis voluptatum expedita iste libero? Illum est in earum. Temporibus repudiandae odit rerum culpa omnis?
                     </p>
                     <div className="flex gap-4">
-                        <Link
-                            to="https://docs.google.com/forms/d/e/1FAIpQLSe1zUTiCxwRnHlH4EzkCQYEMesMl1t8-5Dynfu6Ml7pN6N1Lg/viewform"
-                            target="_blank">
-                            <Button text="Register" />
-                        </Link>
-                        <Link to="/home" >
-                            <Button text="Home" />
-                        </Link>
+                        <Button>
+                            <Link
+                                to="https://docs.google.com/forms/d/e/1FAIpQLSe1zUTiCxwRnHlH4EzkCQYEMesMl1t8-5Dynfu6Ml7pN6N1Lg/viewform"
+                                target="_blank">
+                                Register
+                            </Link>
+                        </Button>
+                        <Button>
+                            <Link to="/home" > Home </Link>
+                        </Button>
                     </div>
                 </div>
             </Element >

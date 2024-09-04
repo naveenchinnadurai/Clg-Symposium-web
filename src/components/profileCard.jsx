@@ -5,7 +5,7 @@ import { FaGithub, FaInstagram } from "react-icons/fa6";
 const ProfileCard = (props) => {
   const data = props.profileData;
   return (
-    <div className="bg-gray-900 text-white rounded-lg flex flex-col h-fit justify-start items-start space-x-4 z-10">
+    <div className="bg-gray-900 text-white rounded-lg flex flex-col h-fit justify-start items-start space-x-4 z-10 py-1">
       <div className="flex gap-3 p-3">
         <img className="w-20 h-20 rounded-full" src={data.img} alt={data.alt} />
         <div>
