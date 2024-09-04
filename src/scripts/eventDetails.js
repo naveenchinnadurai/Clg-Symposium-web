@@ -534,7 +534,7 @@ export const eventDetails=[
             txt1: 'Indivual participation, no team participation allowed',
             date: '21/09/2024',
             time: '11.45 AM',
-            venue: 'EEE block',
+            venue: 'CSE lab-I,1st floor,Main Block',
             extraInfo: {
                 title: '',
                 txt: ''
@@ -546,13 +546,13 @@ export const eventDetails=[
         },
     },
     {
-        id: 7,
-        deptName: 'Electrical and Electronic Engineering',
-        deptSpecialName: "Lumin-US",
-        nameShort: 'EEE',
-        img: img3,
+        id:8,
+        deptName: 'Medical Electronics',
+        deptSpecialName: "I AM",
+        nameShort: 'MDE',
+        img: img7,
         to: '/deptpage',
-        deptTxt1: 'Join us at the Electrical and Electronics Engineering Symposium! Discover cutting-edge advancements, engage with leading experts, and explore innovative solutions shaping the future of technology',
+        deptTxt1: 'Join us at the Medical Electronics Engineering Symposium! Discover cutting-edge advancements, engage with leading experts, and explore innovative solutions shaping the future of technology',
         event1: {
             eventTitle: 'Paper Presentation',
             generalInfo: [
@@ -564,18 +564,18 @@ export const eventDetails=[
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
             time: '11:30PM',
-            venue: 'EEE Block',
+            venue: 'MDE Block',
             extraInfo: {
                 title: 'Topics',
                 txt: 'Any Topics as per your wish and convenience'
             },
             coOrdinator: {
-                name: 'M.Dhanush Lakshman(st)CSE-IV yr',
-                phn: 9878567465
+                name: 'M.KaviyaSri MDE-IV yr',
+                phn: 7200849740
             }
         },
         event2: {
-            eventTitle: 'Connexion',
+            eventTitle: 'Ad-Zap',
             generalInfo: [
                 'Showcase your innovative ideas and technical projects either individually or as a team.',
                 'A PowerPoint presentation (PPT) supporting your project is encouraged. Bring any necessary equipment or materials for your demonstration.',
@@ -594,12 +594,12 @@ export const eventDetails=[
                 txt2: 'Round:2 - '
             },
             coOrdinator: {
-                name: 'Muneeswaran.S(st)IT-IV yr',
+                name: 'Siwani - MDE(IV-year)',
                 phn: 8220723803
             }
         },
         event3: {
-            eventTitle: 'Just A Minute',
+            eventTitle: 'Project Contest',
             generalInfo: [
                 'Participants will have exactly one minute to deliver a concise and impactful presentation on their chosen topic.',
                 'Visual aids such as PowerPoint slides are encouraged to enhance your presentation, but keep them brief and relevant.',
@@ -617,7 +617,7 @@ export const eventDetails=[
                 txt: ''
             },
             coOrdinator: {
-                name: 'Vijay.P(st)IT-IV yr',
+                name: 'Naresh Balaji-(MDE-Final year)',
                 phn: 9345591399
             }
         },

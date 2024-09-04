@@ -7,7 +7,8 @@ import DeptCard from '../components/deptCard';
 import ProfileCard from '../components/profileCard';
 import { guestInfo, instruction, symDetails } from '../scripts/data';
 import { eventDetails } from '../scripts/eventDetails';
-
+import { developers } from '../scripts/developers';
+import instructions from '../assets/instruction.png'
 function Home() {
 
     return (
@@ -48,7 +49,7 @@ function Home() {
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-3'>
                     {
-                        symDetails.map((card,i) => {
+                        symDetails.map((card, i) => {
                             const Icon = card.icon;
                             return (
                                 <div key={i} className="relative flex flex-col w-full h-auto p-3 bg-gray-900 rounded-xl overflow-hidden isolate font-sans">
@@ -103,27 +104,28 @@ function Home() {
                 </div>
                 <div className='w-full py-5'>
                     <h1 className='text-center text-3xl font-medium tracking-wider mb-4'>General Instruction</h1>
-                    <div className="flex flex-col justify-between w-full mx-auto sm:py-5 px-5 sm:px-0 sm:rounded-xl">
-                        {
-                            instruction.map((i) => {
-                                return (
-                                    <div className="flex  mb-2 p-2" key={i.id}>
-                                        <span className="bg-[#31065c] text-white py-1 px-3 rounded-full text-sm h-fit">{i.id}</span>
-                                        <p className="text-md ml-2">{i.txt}</p>
-                                    </div>
-                                )
-                            })
-                        }
+                    <div className="flex gap-2 mx-auto lg:w-3/4">
+                        <div className=" hidden md:flex w-1/2">
+                            <img src={instructions} alt="Instruction Images" />
+                        </div>
+                        <div className="flex flex-col justify-between mx-auto sm:py-5 px-5 sm:px-0 sm:rounded-xl">
+                            {
+                                instruction.map((i) => {
+                                    return (
+                                        <div className="flex  mb-2 p-2" key={i.id}>
+                                            <span className="bg-[#31065c] text-white py-1 px-3 rounded-full text-sm h-fit">{i.id}</span>
+                                            <p className="text-md ml-2">{i.txt}</p>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
-            {/* <div className="flex justify-between p-5">
-                <h1 className="text-xl font-medium">Know the event Timeline and venues</h1>
-                <Link to="/timeline">TimeLine</Link>
-            </div> */}
             <div className="flex flex-col gap-3">
                 <h1 className='text-center text-2xl sm:text-xl lg:text-3xl mb-5'>Speakers Of the Event</h1>
-                <div className="flex w-full flex-row overflow-auto md:overflow-visible gap-5 p-2 xl:justify-center">
+                <div className="flex w-full flex-row overflow-auto xl:overflow-visible gap-5 p-2 xl:justify-center">
                     {
                         guestInfo.map((e, i) => {
                             return (
@@ -143,13 +145,17 @@ function Home() {
             <div className="">
                 <Contact />
             </div>
-            <h1 className="text-2xl font-medium text-center">Development Team</h1>
-            <div className="grid  md:grid-cols-3 p-5 gap-3">
-                <ProfileCard />
-                <ProfileCard />
-                <ProfileCard />
+            <h1 className="mt-0 text-2xl font-medium text-center">Development Team</h1>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 place p-5 gap-4">
+                {
+                    developers.map((e, i) => {
+                        return (
+                            <ProfileCard profileData={e} />
+                        )
+                    })
+                }
             </div>
-        </MovingText>
+        </MovingText >
     );
 }
 

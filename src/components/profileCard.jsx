@@ -1,36 +1,42 @@
-import { FaLinkedin } from "react-icons/fa";
+import React from "react";
+import { FaBehance, FaLinkedin } from "react-icons/fa";
 import { FaGithub, FaInstagram } from "react-icons/fa6";
-import profile from '../assets/chiefGuest/guest1.jpg'
 
-import React from 'react';
-
-const ProfileCard = () => {
-    return (
-        <div className="max-w-sm bg-gray-900 text-white rounded-lg p-6 flex space-x-4 z-10">
-            <img className="w-20 h-20 rounded-full"
-                src={profile} alt="Bonnie Green"
-            />
-            <div>
-                <h2 className="text-xl font-bold">Bonnie Green</h2>
-                <p className="text-sm text-gray-400">CEO/Co-founder</p>
-                <p className="text-sm mt-2">Bonnie drives the technical strategy of the themesberg platform and brand.</p>
-                <div className="flex space-x-3 mt-4">
-                    <a href="#" className="text-gray-400 hover:text-white">
-                        <i className="fab fa-twitter"></i>
-                        <FaLinkedin className='text-2xl hover:text-sky-600 ease-out duration-300' />
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-white">
-                        <i className="fab fa-facebook"></i>
-                        <FaGithub className='text-2xl hover:text-sky-600 ease-out duration-300' />
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-white">
-                        <i className="fab fa-github"></i>
-                        <FaInstagram className='text-2xl hover:text-sky-600 ease-out duration-300'/>
-                    </a>
-                </div>
-            </div>
+const ProfileCard = (props) => {
+  const data = props.profileData;
+  return (
+    <div className="bg-gray-900 text-white rounded-lg flex flex-col h-fit justify-start items-start space-x-4 z-10">
+      <div className="flex gap-3 p-3">
+        <img className="w-20 h-20 rounded-full" src={data.img} alt={data.alt} />
+        <div>
+          <h2 className="text-xl font-bold">{data.name}</h2>
+          <p className="text-sm text-gray-400 mt-2">{data.dept}</p>
+          <p className="text-sm text-gray-400">{data.specialization}</p>
         </div>
-    );
+      </div>
+      <div className="pb-3">
+        <p className="text-sm pe-1">{data.about}</p>
+        <div className="flex space-x-3 mt-4">
+          <a href={data.linkedIn} target="_blank" className="text-gray-400 hover:text-white" >
+            <FaLinkedin className="text-2xl hover:text-sky-600 ease-out duration-300" />
+          </a>
+          {
+            data.alt === "akash" ? (
+              <a href={data.behance} target="_blank" className="text-gray-400 hover:text-white">
+                <FaBehance className="text-2xl hover:text-sky-600 ease-out duration-300" />
+              </a>
+            ) : null
+          }
+          <a href={data.github} target="_blank" className="text-gray-400 hover:text-white">
+            <FaGithub className="text-2xl hover:text-sky-600 ease-out duration-300" />
+          </a>
+          <a href={data.instagram} target="_blank" className="text-gray-400 hover:text-white">
+            <FaInstagram className="text-2xl hover:text-sky-600 ease-out duration-300" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default ProfileCard;
+export default ProfileCard;

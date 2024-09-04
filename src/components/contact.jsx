@@ -5,7 +5,7 @@ import { LuMailOpen as Mail } from 'react-icons/lu';
 
 function Contact() {
     return (
-        <div className="flex flex-col-reverse sm:flex-row-reverse w-full md:w-5/6 mx-auto p-5 !py-10 items-center justify-center relative gap-1 md:gap-10">
+        <div className="flex flex-col-reverse sm:flex-row-reverse w-full md:w-5/6 mx-auto px-5 pt-7 pb-5 sm:py-10  items-center justify-center relative gap-1 md:gap-10">
             <div className="flex flex-col w-full md:w-fit py-5">
                 <h1 className="text-3xl font-semibold text-white mb-4 text-center sm:text-left">Contact us</h1>
                 <div className="flex md:flex-col items-center justify-center gap-4 w-full sm:flex-row flex-wrap">
