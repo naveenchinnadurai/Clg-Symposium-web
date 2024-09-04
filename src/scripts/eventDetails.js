@@ -402,7 +402,7 @@ export const eventDetails=[
         to:'/deptpage',
         deptTxt1:'Covers mechanical systems, robotics, and manufacturing, driving advancements in key industries.',
         event1:{
-            eventTitle:'Paper Presentation PPT',
+            eventTitle:'Paper Presentation',
             generalInfo:[
                 'Participants are allowed to present their paper individually or with their team mates.',
                 'Topics should be based on any technical ideas and  Paper should be in the IEEE format.',
@@ -710,7 +710,7 @@ export const eventDetails=[
         to:'/deptpage',
         deptTxt1:'Equips graduates with strategic management skills for leadership in global business environments.',
         event1:{
-            eventTitle:'Paper Presentation PPT',
+            eventTitle:'Paper Presentation',
             generalInfo:[
                 'Participants are allowed to present their paper individually or with their team mates.',
                 'Topics should be based on any technical ideas and  Paper should be in the IEEE format.',
@@ -785,7 +785,7 @@ export const eventDetails=[
         to:'/deptpage',
         deptTxt1:' Specializes in cybersecurity, equipping students to protect digital assets across industries..',
         event1:{
-            eventTitle:'Paper Presentation PPT',
+            eventTitle:'Paper Presentation',
             generalInfo:[
                 'Participants are allowed to present their paper individually or with their team mates.',
                 'Topics should be based on any technical ideas and  Paper should be in the IEEE format.',
@@ -852,7 +852,7 @@ export const eventDetails=[
         to:'/deptpage',
         deptTxt1:'Advances drug development with expertise in biochemistry, pharmacology, and industry processes.',
         event1:{
-            eventTitle:'Paper Presentation PPT',
+            eventTitle:'Paper Presentation',
             generalInfo:[
                 'Participants are allowed to present their paper individually or with their team mates.',
                 'Topics should be based on any technical ideas and  Paper should be in the IEEE format.',

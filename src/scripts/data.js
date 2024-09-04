@@ -1,36 +1,36 @@
-import guest1 from '../assets/chiefGuest/guest1.jpg'
-import guest2 from '../assets/chiefGuest/guest2.jpg'
+import correspondent from '../assets/chiefGuest/correspondent.webp'
+import principal from '../assets/chiefGuest/principal.webp'
 import guest3 from '../assets/chiefGuest/guest3.jpg'
 import guest4 from '../assets/chiefGuest/guest4.jpg'
 
 export const guestInfo = [
     {
         id:1,
-        name: 'Lawrence Nesmith',
-        role1:'Founder',
-        role: 'Founder Sengunthar Institution',
-        img: guest1
+        name: 'Prof. A. Baladhandapani',
+        role1:'Founder & Chairman',
+        role: 'Sengunthar Institution',
+        img: correspondent
     },
     {
         id:2,
-        name: 'Robert Brennan',
-        role1: 'Founder & Chairman',
-        role: 'Sengunthar Institution',
-        img: guest3
+        name: 'Dr. R.Satish Kumar',
+        role1: 'Principal',
+        role: 'Sengunthar Engineering College',
+        img: principal
     },
     {
         id:3,
-        name: 'Swetha Kumar',
+        name: 'Agr. Swetha Kumar',
         role1: 'CEO',
         role:'Zween Webhub',
-        img: guest2
+        img: guest4
     },
     {
         id:4,
         name: 'Kathleen Sprague',
         role1:'Chief Manager',
         role: 'Zween Web InfoTech',
-        img: guest4
+        img: guest3
     }
 ]
 

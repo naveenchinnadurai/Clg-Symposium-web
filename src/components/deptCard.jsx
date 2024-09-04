@@ -4,10 +4,6 @@ import { Link } from 'react-router-dom';
 function DeptCard(props) {
   const dept = props.deptment;
 
-  const setDeptInfo = () => {
-    document.cookie = JSON.stringify(dept);
-  };
-
   return (
     <div
       className='
@@ -24,7 +20,13 @@ function DeptCard(props) {
       </div>
       <h2 className="text-lg sm:text-xl font-medium text-gray-900 dark:text-white text-center"> {dept.nameShort} </h2>
       <p className='text-sm sm:text-base text-center text-gray-300'> {dept.deptTxt1} </p>
-      <Link to='/deptpage' onClick={setDeptInfo} className='self-center mt-4'>
+      <Link
+        to={{
+          pathname: `/deptPage`,
+        }}
+        state={dept}
+        className='self-center mt-4'
+      >
         <button className="
           relative inline-flex items-center justify-center p-0.5 mb-2 me-2 
           overflow-hidden text-sm sm:text-base font-medium text-gray-900 

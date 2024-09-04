@@ -1,14 +1,12 @@
 import React from 'react';
-import { BsArrowUpCircle as Top } from 'react-icons/bs';
 import MovingText from 'react-moving-text';
 import { Link } from 'react-router-dom';
-import { Element, Link as ScrollLink } from 'react-scroll';
+import { Element } from 'react-scroll';
 import Contact from '../components/contact';
 import DeptCard from '../components/deptCard';
-import Footer from '../components/footer';
+import ProfileCard from '../components/profileCard';
 import { guestInfo, instruction, symDetails } from '../scripts/data';
 import { eventDetails } from '../scripts/eventDetails';
-import ProfileCard from '../components/profileCard';
 
 function Home() {
 
@@ -119,9 +117,13 @@ function Home() {
                     </div>
                 </div>
             </div>
+            {/* <div className="flex justify-between p-5">
+                <h1 className="text-xl font-medium">Know the event Timeline and venues</h1>
+                <Link to="/timeline">TimeLine</Link>
+            </div> */}
             <div className="flex flex-col gap-3">
                 <h1 className='text-center text-2xl sm:text-xl lg:text-3xl mb-5'>Speakers Of the Event</h1>
-                <div className="flex w-full overflow-auto flex-row gap-5 p-2 xl:justify-center">
+                <div className="flex w-full flex-row overflow-auto md:overflow-visible gap-5 p-2 xl:justify-center">
                     {
                         guestInfo.map((e, i) => {
                             return (

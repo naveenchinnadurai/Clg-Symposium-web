@@ -1,10 +1,7 @@
 import React from 'react'
-import { FaInstagram as Insta, FaFacebookSquare as FB } from 'react-icons/fa'
+import { FaFacebookSquare as FB, FaInstagram as Insta } from 'react-icons/fa'
 import { FiMail as Mail } from 'react-icons/fi'
 import { Link, useLocation } from 'react-router-dom'
-import DeptCard from './deptCard.jsx'
-import Timeline from './Timeline.jsx'
-import { Link as ScrollLink } from 'react-scroll'
 
 export function Footer() {
   const path = useLocation()
@@ -16,10 +13,10 @@ export function Footer() {
       <div className="w-fit p-2">
         <ul className="flex flex-wrap items-center gap-5">
           {
-            [{ text: "Home", to: "/" }, { text: "Departments", to: "/deptCard" }, { text: "Our Website", to: "#" }, { text: "Event Timeline", to: "/timeline" }].map((e, i) => {
+            [{ text: "Home", to: "/home" }, { text: "Departments", to: "/deptCard" }, { text: "Our Website", to: "https://www.sect.edu.in/" }, { text: "Event Timeline", to: "/timeline" }].map((e, i) => {
               return (
                 <li key={i} className="p-0">
-                  <Link className="font-medium text-gray-400 hover:text-gray-700" to={e.to}> {e.text} </Link>
+                  <Link className="font-medium text-gray-400 hover:text-gray-700" target='__blank' to={e.to}> {e.text} </Link>
                 </li>
               )
             })

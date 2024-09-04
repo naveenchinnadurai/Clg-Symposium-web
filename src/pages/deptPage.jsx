@@ -1,20 +1,33 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Element } from 'react-scroll';
 import Button from '../components/Button';
 import EventSection from '../components/eventSection';
+import { IoIosArrowBack as MobileArrow, IoMdArrowRoundBack as DesktopArrow } from "react-icons/io";
 
-function DeptPage(props) {
-    const deptObj = JSON.parse(document.cookie);
-    console.log(deptObj);
+function DeptPage() {
+    const location = useLocation();
+    const deptObj = location.state;
+    console.log(location);
     const [event, setEvent] = useState(deptObj.event1);
 
-    const switchEvent2 = () => setEvent(deptObj.event2);
-    const switchEvent3 = () => setEvent(deptObj.event3);
+    const changeEvent = (eventProp) => {
+        setEvent(eventProp);
+    }
 
     return (
-        <div className="min-h-screen" data-aos="fade-in" data-aos-duration="2000">
-            <Element name="deptpage-div-1" className="flex flex-col md:flex-row justify-between p-8">
+        <div className="relative min-h-screen" data-aos="fade-in" data-aos-duration="2000">
+            {/* <Link to="/home" className='md:absolute md:top-5 md:left-5 pt-5'>
+                <DesktopArrow className='text-4xl mt-5 ml-5' />
+                {
+                    window.innerWidth <= 700 ? (
+                        <MobileArrow className='text-4xl' />
+                    ) : (
+                        <DesktopArrow className='text-4xl' />
+                    )
+                }
+            </Link> */}
+            <Element name="deptpage-div-1" className="flex flex-col md:flex-row justify-between px-8 pt-5">
                 <div className="md:w-1/3 flex md:justify-center items-center">
                     <img src={deptObj.img} alt={deptObj.deptName} className="h-52 md:h-60 w-52 md:w-60 rounded-full object-cover" />
                 </div>
@@ -27,7 +40,7 @@ function DeptPage(props) {
                     </p>
                     <div className="flex gap-4">
                         <Link
-                            to="https://docs.google.com/forms/d/e/1FAIpQLScv_W1hmSG9bEC-hzfnCku2fd32DxzX765lI17prWo-z9nWmw/viewform"
+                            to="https://docs.google.com/forms/d/e/1FAIpQLSe1zUTiCxwRnHlH4EzkCQYEMesMl1t8-5Dynfu6Ml7pN6N1Lg/viewform"
                             target="_blank">
                             <Button text="Register" />
                         </Link>
@@ -38,21 +51,21 @@ function DeptPage(props) {
                 </div>
             </Element >
 
-            <div className="text-center p-2 md:p-8">
+            <div className="text-center flex flex-col justify-center p-2">
                 <h1 className="text-3xl font-bold text-white mb-4">Event Details</h1>
-                <div className="flex flex-col  md:flex-row gap-2 justify-between">
-                    <div className="w-full justify-center md:justify-start gap-1 md:w-1/3 flex md:flex-col">
-                        <Link className="bg-gray-700 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={() => { setEvent(deptObj.event1); console.log(deptObj.event1) }}>
+                <div className="flex flex-col justify-center items-center md:w-5/6 lg:w-4/5 mx-auto">
+                    <div className="z-10  w-full justify-center gap-2 md:gap-3 flex">
+                        <button className={`px-7 py-2 rounded-t-lg text-lg z-10 ${event.eventTitle === deptObj.event1.eventTitle ? "bg-slate-900" : null}`} onClick={() => changeEvent(deptObj.event1)}>
                             PPT
-                        </Link>
-                        <Link className="bg-gray-700 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={() => setEvent(deptObj.event2)}>
+                        </button>
+                        <button className={`px-4 py-2 rounded-t-lg text-lg ${event.eventTitle === deptObj.event2.eventTitle ? "bg-slate-900" : null}`} onClick={() => changeEvent(deptObj.event2)}>
                             {deptObj.event2.eventTitle}
-                        </Link>
-                        <Link className="bg-gray-800 text-white px-4 py-2 mb-2 rounded-lg text-lg" onClick={() => setEvent(deptObj.event3)}>
+                        </button>
+                        <button className={`px-4 py-2  rounded-t-lg text-lg ${event.eventTitle === deptObj.event3.eventTitle ? "bg-slate-900" : null}`} onClick={() => changeEvent(deptObj.event3)}>
                             {deptObj.event3.eventTitle}
-                        </Link>
+                        </button>
                     </div>
-                    <div className="w-full md:w-2/3 z-10">
+                    <div className="w-full z-10">
                         <EventSection
                             eventName={event.eventTitle}
                             eventInfo={event.generalInfo}
