@@ -8,7 +8,7 @@ import Home from './pages/home'
 import NotFound from './pages/notFoundPage'
 import Splash from './pages/splash'
 import './global.css'
-import Timeline from './pages/Timeline'
+import Timeline from './pages/timeline'
 AOS.init();
 function App() {
   const location = useLocation();
