@@ -39,7 +39,7 @@ const contactInfo = [
         id: 1,
         icon: <Phone />,
         title: 'Phone',
-        text: '+123 435 12'
+        text: 'tel:04288 255716'
     },
     {
         id: 3,
@@ -51,7 +51,7 @@ const contactInfo = [
         id: 2,
         icon: <Mail />,
         title: 'E-Mail',
-        text: 'sectrichengode@.co.in'
+        text: 'info@scteng.co.in'
     }
 ];
 

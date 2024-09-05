@@ -20,17 +20,13 @@ export const guestInfo = [
     },
     {
         id:3,
-        name: 'Agr. Swetha Kumar',
-        role1: 'CEO',
-        role:'Zween Webhub',
-        img: guest4
+        name: 'Updated Soon!',
+       
     },
     {
         id:4,
-        name: 'Kathleen Sprague',
-        role1:'Chief Manager',
-        role: 'Zween Web InfoTech',
-        img: guest3
+        name: 'Updated Soon!',
+       
     }
 ]
 
