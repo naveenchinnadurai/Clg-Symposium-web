@@ -36,7 +36,7 @@ function DeptPage() {
                         Department of {deptObj.deptName} <span className="text-purple-300">({deptObj.deptSpecialName})</span>
                     </h1>
                     <p className="text-lg text-gray-200 mt-4 mb-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusamus fugit sequi officiis tempora maxime ullam nemo animi, id molestiae fugiat ipsam natus mollitia nam veritatis voluptatum expedita iste libero? Illum est in earum. Temporibus repudiandae odit rerum culpa omnis?
+                        {deptObj.para}
                     </p>
                     <div className="flex gap-4">
                         <Button>

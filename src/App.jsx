@@ -9,6 +9,7 @@ import NotFound from './pages/notFoundPage'
 import Splash from './pages/splash'
 import './global.css'
 import Timeline from './pages/timeline'
+import BusRoute from './pages/buseRoutes'
 AOS.init();
 function App() {
   const location = useLocation();
@@ -23,9 +24,10 @@ function App() {
       }
       <Routes>
         <Route path='/' element={<Splash />} />
-        <Route path='/home' element={<Home />} />
+        <Route path='/home' element={<Home />} />   
         <Route path='/deptPage' element={<DeptPage />}></Route>
         <Route path="/timeline" element={<Timeline />} />
+        <Route path="/busroute" element={<BusRoute />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
       <Footer />

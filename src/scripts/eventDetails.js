@@ -18,6 +18,7 @@ export const eventDetails=[
         deptSpecialName:"ITrenders",
         img:img1,
         nameShort:'CSE',
+        para:"CSE focuses on the study of computers, software, and computational processes. It covers a wide array of topics including programming, software engineering, algorithms, databases, networking, and artificial intelligence. Graduates typically pursue careers as software developers, data scientists, or system architects, working in various industries to create and manage complex software systems.",
         deptTxt1:'Join us for an inspiring day of innovation and learning at the CSE Symposium. Elevate your knowledge, connect with experts, and shape the future!',
         to:'/deptpage',
         event1:{
@@ -93,6 +94,7 @@ export const eventDetails=[
         nameShort: 'ECE',
         img: img2,
         to: '/deptpage',
+        para:"ECE focuses on the design and development of electronic devices and communication systems. It includes the study of analog and digital communications, signal processing, and microelectronics. ECE graduates work on developing advanced communication systems, electronic devices, and integrated circuits that are essential in today’s connected world.",
         deptSpecialName: "Tragga Talenta",
         deptTxt1: 'Unlock the future of electronics at the ECE Symposium. Dive into innovations, network with visionaries, and shape tomorrows tech landscape',
         to: '/deptpage',
@@ -172,6 +174,7 @@ export const eventDetails=[
         nameShort: 'IT',
         img: img10,
         to: '/deptpage',
+        para:"Information Technology focuses on the application and management of computing technologies to solve business and organizational problems. IT professionals are responsible for the development and maintenance of information systems, networking, cybersecurity, and database management. They ensure that technology infrastructure supports business needs effectively and securely.",
         deptTxt1: 'Step into the future of technology at the IT Symposium. Explore cutting-edge innovations, connect with industry leaders, and unlock endless possibilities!',
         event1: {
             eventTitle: 'Paper Presentation',
@@ -250,6 +253,7 @@ export const eventDetails=[
         img:img9,
         nameShort:'AI & DS',
         to:'/deptpage',
+        para:"AIDS combines the study of artificial intelligence (AI) with data science to analyze and derive insights from large datasets. It involves machine learning, data mining, and statistical analysis to develop intelligent systems capable of making decisions. Professionals in this field work in various sectors, including technology, finance, healthcare, and marketing, where data-driven decision-making is crucial.",
         deptTxt1:'Merges AI and data science, preparing students for careers in innovation and problem-solving.',
         event1:{
             eventTitle:'Paper Presentation',
@@ -325,6 +329,7 @@ export const eventDetails=[
         img: img4,
         nameShort: 'Civil',
         to: '/deptpage',
+        para:"Civil Engineering is dedicated to the design, construction, and maintenance of the built environment, including structures like buildings, bridges, and infrastructure systems. It combines principles of engineering with environmental considerations, aiming to create sustainable and resilient structures. Civil engineers play key roles in urban planning, environmental management, and structural design.",
         deptTxt1: 'Join us at the Civil Engineering Symposium, where innovation meets infrastructure. Connect with industry experts, explore groundbreaking projects, and shape the future of sustainable development!',
         event1: {
             eventTitle: 'Paper Presentation',
@@ -399,6 +404,7 @@ export const eventDetails=[
         deptSpecialName:"Gear Mech",
         nameShort:'MECH',
         img:img5,
+        para:"Mechanical Engineering is the discipline that deals with the design, analysis, and manufacturing of mechanical systems. This includes everything from engines and machines to robots and thermal systems. Mechanical engineers work in diverse industries, including automotive, aerospace, and manufacturing, solving complex problems related to the mechanics and dynamics of physical systems.",
         to:'/deptpage',
         deptTxt1:'Covers mechanical systems, robotics, and manufacturing, driving advancements in key industries.',
         event1:{
@@ -475,6 +481,7 @@ export const eventDetails=[
         nameShort: 'EEE',
         img: img3,
         to: '/deptpage',
+        para:"EEE deals with the study and application of electricity, electronics, and electromagnetism. It covers power generation and distribution, electronic devices, and communication systems. Electrical engineers design, develop, and maintain electrical and electronic systems, working in industries like power generation, telecommunications, and consumer electronics.",
         deptTxt1: 'Join us at the Electrical and Electronics Engineering Symposium! Discover cutting-edge advancements, engage with leading experts, and explore innovative solutions shaping the future of technology',
         event1: {
             eventTitle: 'Paper Presentation',
@@ -552,6 +559,7 @@ export const eventDetails=[
         nameShort: 'MDE',
         img: img7,
         to: '/deptpage',
+        para:"Medical Electronics integrates electronics with biomedical applications to design and develop medical devices and systems, such as pacemakers, imaging equipment, and diagnostic tools. This field combines engineering and healthcare, with professionals working to enhance medical technology and improve patient care.",
         deptTxt1: 'Join us at the Medical Electronics Engineering Symposium! Discover cutting-edge advancements, engage with leading experts, and explore innovative solutions shaping the future of technology',
         event1: {
             eventTitle: 'Paper Presentation',
@@ -627,6 +635,7 @@ export const eventDetails=[
         deptName: 'Robotics and Automation',
         deptSpecialName: "Roam",
         img: img8,
+        para:"Robotics and Automation focuses on the design, construction, and programming of robots and automated systems. It involves a multidisciplinary approach, combining mechanical engineering, electronics, and computer science. Engineers in this field develop robots and systems that automate tasks, improving efficiency in industries like manufacturing, healthcare, and logistics.",
         nameShort: 'ROAM',
         to: '/deptpage',
         deptTxt1: 'Join us at the MBA Symposium, where business leaders and aspiring entrepreneurs converge. Explore transformative business strategies, gain insights from industry experts, and network with peers to drive your career forward!',
@@ -708,6 +717,7 @@ export const eventDetails=[
         nameShort:'MBA',
         img:img6,
         to:'/deptpage',
+        para:"The MBA program provides advanced education in business management and administration, covering areas like finance, marketing, operations, and strategic management. It equips students with the skills needed for leadership and managerial roles across various industries, preparing them to make strategic decisions, manage teams, and drive business growth",
         deptTxt1:'Equips graduates with strategic management skills for leadership in global business environments.',
         event1:{
             eventTitle:'Paper Presentation',
@@ -783,6 +793,7 @@ export const eventDetails=[
         nameShort:'CSE(CS)',
         img:img11,
         to:'/deptpage',
+        para:"Computer Science (Cyber Security) focuses on protecting systems and data from cyber threats. It covers encryption, ethical hacking, and network security, preparing graduates for roles as cybersecurity analysts and security consultants, essential for safeguarding digital assets.",
         deptTxt1:' Specializes in cybersecurity, equipping students to protect digital assets across industries..',
         event1:{
             eventTitle:'Paper Presentation',
@@ -849,6 +860,7 @@ export const eventDetails=[
         deptSpecialName:"Pharmkon",
         nameShort:'Pharm Tech',
         img:img12,
+        para:"Pharmaceutical Technology applies engineering principles to the development and manufacturing of pharmaceutical products. It involves drug formulation, production, and quality control, ensuring that medications are safe and effective. Professionals in this field work in the pharmaceutical industry, contributing to drug development and the manufacturing processes that bring new treatments to market.",
         to:'/deptpage',
         deptTxt1:'Advances drug development with expertise in biochemistry, pharmacology, and industry processes.',
         event1:{

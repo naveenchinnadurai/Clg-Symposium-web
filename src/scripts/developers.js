@@ -1,5 +1,5 @@
 import akash from '../assets/developers/akash.jpg';
-import munees from '../assets/developers/munees.jpg';
+import munees from '../assets/developers/muness.png';
 import naveen from '../assets/developers/naveen.jpg';
 
 export const developers = [
@@ -16,7 +16,7 @@ export const developers = [
     behance: "",
   },
   {
-    name: "MuneesWaran",
+    name: "Muneeswaran",
     dept:"B.Tech IT -IV Year",
     img: munees,
     alt: "muness",

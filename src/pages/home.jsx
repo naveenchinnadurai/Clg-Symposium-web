@@ -8,6 +8,7 @@ import ProfileCard from '../components/profileCard';
 import { guestInfo, instruction, symDetails } from '../scripts/data';
 import { eventDetails } from '../scripts/eventDetails';
 import { developers } from '../scripts/developers';
+import Button from '../components/Button'
 import instructions from '../assets/instruction.png'
 function Home() {
 
@@ -101,6 +102,14 @@ function Home() {
                             })
                         }
                     </Element>
+                </div>
+                <div className="p-10 flex flex-col md:flex-row gap-10 container items-center bg-slate-900 mt-10 bg-opacity-35">
+                    <p className="text-xl text-center md:text-left">
+                    You can access and review the detailed agenda of the upcoming event by clicking the button provided below. This will allow you to explore the schedule, session details, and any important updates to ensure you are well-prepared and informed about the event proceedings.
+                    </p>
+                    <Button className="!w-fit h-fit px-10">
+                        <Link to="/timeline">Agenda</Link>
+                    </Button>
                 </div>
                 <div className='w-full py-5'>
                     <h1 className='text-center text-3xl font-medium tracking-wider mb-4'>General Instruction</h1>
