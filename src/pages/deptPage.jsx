@@ -38,6 +38,10 @@ function DeptPage() {
                     <p className="text-lg text-gray-200 mt-4 mb-6">
                         {deptObj.para}
                     </p>
+                    <div className='mb-5 '>
+                        <p>Staff-Coordinator : <span className='font-bold'>{deptObj.staffCord}</span></p>
+                        <p>Student-Coordinator : <span className='font-bold'>{deptObj.stuCord}</span></p>
+                    </div>
                     <div className="flex gap-4">
                         <Button>
                             <Link
@@ -75,6 +79,8 @@ function DeptPage() {
                             date={event.date}
                             time={event.time}
                             venue={event.venue}
+                            txt={event.txt1}
+                            txt1={event.txt2}
                             title2={event.extraInfo.title}
                             eventInfo2={event.extraInfo.txt}
                             coOrdinatorName={event.coOrdinator.name}

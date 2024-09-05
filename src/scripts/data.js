@@ -43,16 +43,17 @@ export const symDetails=[
     },
     {
         id:'card-2',
-        title:'Location',
-        content:'Kosvampalayam, Kumaramangalam(PO)',
-        content1:'Tiruchengode-637 205,Nammakkal(Dt), Tamil Nadu',
+        title:'Rs.200/head',
+        content:'Refreshment and Lunch will be provided.',
+        content1:'Lunch and refreshments will be provided for both days of the event'
     },
     {
         id:'card-3',
-        title:'Rs.200/head',
-        content:'Refreshment and Lunch will be provided.',
-        content1:' Accomadation will be provided based on requirement.'
-    }
+        title:'Accommodation',
+        content:'Rs.100/head',
+        content1:'Accomadation will be provided based on requirement.',
+    },
+   
 ]
 
 export const instruction=[

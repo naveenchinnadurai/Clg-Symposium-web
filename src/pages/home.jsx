@@ -10,6 +10,7 @@ import { eventDetails } from '../scripts/eventDetails';
 import { developers } from '../scripts/developers';
 import Button from '../components/Button'
 import instructions from '../assets/instruction.png'
+
 function Home() {
 
     return (
@@ -26,8 +27,12 @@ function Home() {
             <div className="flex flex-col items-center h-fit w-full">
                 <div className='flex flex-col gap-y-20 justify-around pt-5 h-screen'>
                     <div className="flex flex-col items-center gap-1 md:gap-3 text-center">
+                        
                         <h1 className='text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight'>National Level Technical Symposium</h1>
                         <p className='text-xl sm:text-lg lg:text-4xl font-serif font-bold mt-2'>Sengunthar Engineering College (Autonomous)</p>
+                        <p className='text-l sm:text-lg lg:text-l font-bold mt-2'>Kosvampalayam, Kumaramangalam(PO)
+                       </p>
+                       <span className='text-l sm:text-lg lg:text-2xl font-bold text--600'>Tiruchengode-637 205,Nammakkal(Dt), Tamil Nadu</span>
                         <h2 className='text-lg sm:text-lg lg:text-2xl font-semibold md:mt-2'>Presents</h2>
                         <p className='text-2xl sm:text-xl lg:text-4xl font-serif mt-2'>TechSym <span className='text-2xl md:text-5xl sm:text-3xl lg:text-4xl font-serif mx-1'>SAரYU</span> 2k24</p>
                     </div>
