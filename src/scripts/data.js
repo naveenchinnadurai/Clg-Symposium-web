@@ -46,7 +46,7 @@ export const symDetails=[
     {
         id:'card-3',
         title:'Accommodation',
-        content:'Rs.100/head',
+        content:'Rs.200/head',
         content1:'Accomadation will be provided based on requirement.',
     },
    

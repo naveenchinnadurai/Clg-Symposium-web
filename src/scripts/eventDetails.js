@@ -113,7 +113,7 @@ export const eventDetails = [
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
-            time: '10:30PM',
+            time: '10:30AM',
             venue: 'ECE Seminar Hall',
             extraInfo: {
                 title: 'Topics',
@@ -193,7 +193,7 @@ export const eventDetails = [
 
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
-            time: '11:30PM',
+            time: '11:30AM',
             venue: 'IT lab-I,1nd floor,IT Block',
             extraInfo: {
                 title: 'Topics',
@@ -342,7 +342,7 @@ export const eventDetails = [
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
-            time: '10.00 am - 03.00 pm',
+            time: '10.00 AM - 03.00 PM',
             venue: 'Civil CAD lab',
             extraInfo: {
                 title: 'Topics',
@@ -387,7 +387,7 @@ export const eventDetails = [
             ],
             txt1: 'Indivual participation, no team participation allowed',
             date: '21/09/2024',
-            time: ' 11.00 am - 01.00 pm',
+            time: ' 11.00 AM - 01.00 PM',
             venue: 'Civil CAD Lab',
 
             coOrdinator: {
@@ -417,7 +417,7 @@ export const eventDetails = [
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
-            time: '11:30PM',
+            time: '11:30AM',
             venue: 'Mech Lab , Mech Department',
             extraInfo: {
                 title: 'Topics',
@@ -565,7 +565,7 @@ export const eventDetails = [
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
-            time: '11:30PM',
+            time: '11:30AM',
             venue: 'BMI Lab, 2nd floor, Sengunthar Engineering College.',
             extraInfo: {
                 title: 'Topics',
@@ -640,7 +640,7 @@ export const eventDetails = [
         para: "Robotics and Automation focuses on the design, construction, and programming of robots and automated systems. It involves a multidisciplinary approach, combining mechanical engineering, electronics, and computer science. Engineers in this field develop robots and systems that automate tasks, improving efficiency in industries like manufacturing, healthcare, and logistics.",
         nameShort: 'ROAM',
         to: '/deptpage',
-        deptTxt1: 'Join us at the MBA Symposium, where business leaders and aspiring entrepreneurs converge. Explore transformative business strategies, gain insights from industry experts, and network with peers to drive your career forward!',
+        deptTxt1: 'Join us for an exciting exploration of the latest innovations in robotics at our symposium! Discover groundbreaking technologies and connect with industry leaders and experts.',
         event1: {
             eventTitle: 'Paper Presentation',
             generalInfo: [
@@ -648,7 +648,7 @@ export const eventDetails = [
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
-            time: '11:30PM',
+            time: '11:30AM',
             venue: 'MBA Block',
             extraInfo: {
                 title: 'Topics',
@@ -787,7 +787,7 @@ export const eventDetails = [
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2023',
-            time: '11:30PM',
+            time: '11:30AM',
             venue: 'CSE lab-I,1nd floor,CSE Block',
             extraInfo: {
                 title: 'Topics',
@@ -857,7 +857,7 @@ export const eventDetails = [
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
-            time: '11:30PM',
+            time: '11:30AM',
             venue: 'Pharm lab-I,1nd floor,Main Block',
             extraInfo: {
                 title: 'Topics',

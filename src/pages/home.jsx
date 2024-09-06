@@ -32,7 +32,7 @@ function Home() {
                         <p className='text-xl sm:text-lg lg:text-4xl font-serif font-bold mt-2'>Sengunthar Engineering College (Autonomous)</p>
                         <p className='text-l sm:text-lg lg:text-l font-bold mt-2'>Kosvampalayam, Kumaramangalam(PO)
                        </p>
-                       <span className='text-l sm:text-lg lg:text-2xl font-bold text--600'>Tiruchengode-637 205,Nammakkal(Dt), Tamil Nadu</span>
+                       <span className='text-l sm:text-lg lg:text-2xl font-bold text--600'>Tiruchengode-637 205,Namakkal(Dt), Tamil Nadu</span>
                         <h2 className='text-lg sm:text-lg lg:text-2xl font-semibold md:mt-2'>Presents</h2>
                         <p className='text-2xl sm:text-xl lg:text-4xl font-serif mt-2'>TechSym <span className='text-2xl md:text-5xl sm:text-3xl lg:text-4xl font-serif mx-1'>SAரYU</span> 2k24</p>
                     </div>
