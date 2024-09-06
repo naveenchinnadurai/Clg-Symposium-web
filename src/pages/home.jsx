@@ -92,7 +92,7 @@ function Home() {
 
                 </div>
             </Element>
-            <div className="relative">
+            <div className="relative" id='dept'>
                 <div className=''>
                     <h1 className='text-center text-2xl sm:text-xl lg:text-3xl mb-5'>Departments</h1>
                     <Element className="px-7 flex-wrap justify-center gap-5 grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-col-4">

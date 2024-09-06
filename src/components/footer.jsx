@@ -13,7 +13,7 @@ export function Footer() {
       <div className="w-fit p-2">
         <ul className="flex flex-wrap items-center gap-5">
           {
-            [{ text: "Home", to: "/home" }, { text: "Departments", to: "/deptCard" }, { text: "Our Website", to: "https://www.sect.edu.in/" }, { text: "Event Timeline", to: "/timeline" }].map((e, i) => {
+            [{ text: "Home", to: "/home" }, { text: "Our Website", to: "https://www.sect.edu.in/" }, { text: "Event Timeline", to: "/timeline" }].map((e, i) => {
               return (
                 <li key={i} className="p-0">
                   <Link className="font-medium text-gray-400 hover:text-gray-700" target='__blank' to={e.to}> {e.text} </Link>

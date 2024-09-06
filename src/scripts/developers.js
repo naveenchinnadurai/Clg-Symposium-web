@@ -32,7 +32,7 @@ export const developers = [
     dept:"B.E. CSE -IV Year",
     img: akash,
     alt: "akash",
-    specialization: "UX & UI Designer & Frontend Developer",
+    specialization: "UXUI Designer & Frontend Developer",
     about: "I focus on crafting user-centered designs that offer seamless and engaging experiences. By combining UI/UX principles with frontend development, I aim to create responsive and visually appealing interfaces. ",
     linkedIn: "https://www.linkedin.com/in/akash-kumaraguru/ ",
     github: "https://github.com/akashkumaraguru ",

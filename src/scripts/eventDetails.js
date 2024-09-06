@@ -40,7 +40,7 @@ export const eventDetails = [
                 txt: 'Any Topics as per your wish and convenience Explore the future of technology '
             },
             coOrdinator: {
-                name: 'M.Navanedhan (CSE-IV yr)',
+                name: 'P.Navaneedhan (CSE-IV yr)',
                 phn: 9025475790
             }
         },
@@ -59,7 +59,7 @@ export const eventDetails = [
             venue: 'CSE lab-I,1st floor,Main Block',
             extraInfo: {
                 title: 'Theme',
-                txt: 'Problem statement will be announced on the spot, can use any type design tools.'
+                txt: 'Problem statement or Tasks will be announced on the spot, can use any type design tools.'
             },
             coOrdinator: {
                 name: 'K.Akash (CSE-IV yr)',
@@ -75,7 +75,7 @@ export const eventDetails = [
                 " Winners will be announced based on our evaluation criteria.",
                 "Participant certificates will be provided to all participants."
             ],
-            txt1: 'A Team can consist of maximum 3 memebers',
+            txt1: 'Indivual participation, no team participation allowed',
             date: '21/09/2024',
             time: '10:30 AM',
             venue: 'CSE lab-III,2nd floor,Main Block',
@@ -469,66 +469,70 @@ export const eventDetails = [
         staffCord: 'G . Senthilrajan - 8667033968',
         img: img3,
         to: '/deptpage',
-        para: "EEE deals with the study and application of electricity, electronics, and electromagnetism. It covers power generation and distribution, electronic devices, and communication systems. Electrical engineers design, develop, and maintain electrical and electronic systems, working in industries like power generation, telecommunications, and consumer electronics.",
+        para: "Electrical and electronics engineering involves designing systems for managing electrical energy and developing technology across power generation, communication, and electronic devices. It covers diverse areas such as circuitry and signal processing",
         deptTxt1: 'Join us at the Electrical and Electronics Engineering Symposium! Discover cutting-edge advancements, engage with leading experts, and explore innovative solutions shaping the future of technology',
         event1: {
             eventTitle: 'Paper Presentation',
             generalInfo: [
                 'Participants are allowed to present their paper individually or with their team mates.',
                 'Topics should be based on any technical ideas and  Paper should be in the IEEE format.',
+                'Students present their research or projects to peers and faculty, often using slides or posters.',
+                'This involves explaining their findings, answering questions, and receiving feedback to enhance their understanding and presentation skills.',
                 'If you have any queries about the event,feel free to contact the co-ordinator.',
-                'Team should consist of Maximum 2 members.'
+                
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
-            time: '11:30PM',
-            venue: 'EEE Block',
+            time: '10:00 AM',
+            venue: 'Simulation Lab – EEE Block',
             extraInfo: {
                 title: 'Topics',
-                txt: 'Any Topics as per your wish and convenience'
+                txt: 'Recent Engineering Innovations, projects.'
             },
             coOrdinator: {
-                name: 'E.Madhan Kumar (IV-EEE)',
-                phn: 7540076899
+                name: 'S. Harivallabha ',
+                phn: 8678964813
             }
         },
         event2: {
             eventTitle: 'Connexion',
             generalInfo: [
-                'Updated Soon!'
+                'It’s a fun game.',
+                'Here participants need to find a song, a word or any device name related to EEE by connecting 3 or more pictures.',
             ],
 
-            txt1: 'Updated Soon!',
+            txt1: '',
             date: '21/09/2024',
-            time: '10:30 AM',
-            venue: 'EEE Block',
+            time: '10:00 AM',
+            venue: 'Simulation Lab – EEE Block',
             extraInfo: {
-                title: 'Rounds:',
-                txt1: 'Updated Soon! ',
-                txt2: 'Updated Soon! '
+                title: '',
+                txt1: '',
+                txt2: ' '
             },
             coOrdinator: {
-                name: 'E.Madhan Kumar (IV-EEE)',
-                phn: 7540076899
+                name: 'M.Naveen Prasanth',
+                phn: 6369403435
             }
         },
         event3: {
             eventTitle: 'Just A Minute',
             generalInfo: [
-                'Updated Soon!'
+                'This games includes lots of twists and turns. ',
+                'Its actually a fun game similar to the games in reality shows.',
             ],
 
-            txt1: 'Updated Soon!',
+            txt1: '',
             date: '21/09/2024',
-            time: '11.45 AM',
-            venue: 'EEE block',
+            time: '10:00 AM',
+            venue: 'Simulation Lab – EEE Block',
             extraInfo: {
                 title: '',
                 txt: ''
             },
             coOrdinator: {
-                name: 'E.Madhan Kumar (IV-EEE)',
-                phn: 7540076899
+                name: 'V.Kavin',
+                phn:  7010168480
             }
         },
     },
