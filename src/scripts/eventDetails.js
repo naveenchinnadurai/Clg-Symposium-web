@@ -569,19 +569,19 @@ export const eventDetails = [
         event2: {
             eventTitle: 'Ad-Zap',
             generalInfo: [
-                'A team consist 2-4 participants.',
+                'A team consist 2-4 participants.',
                 'The participants are allowed to do the advertisement for their prepared product.(Healthcare related theme)',
                 'Participants should bring their own requirements if needed for act.',
                 'The maximum duration of the act is 5 min.',
                 'Any vulgarity content in the act is strictly prohibited and team will be disqualified later.',
-                'Act will be carried out through English\ Tamil language.',
+                'Act will be carried out through English & Tamil language.',
                 'I’D card is mandatory for participate this event.',
                 'For any questions or further details, please contact the event coordinator.'
             ],
 
-            txt1: 'A Team can consist of maximum 2-4 memebers',
+            txt1: '',
             date: '21/09/2024',
-            time: '10:30 AM',
+            time: '10:00 AM',
             venue: 'Biosience Lab, Ground floor, Sengunthar Engineering College.',
             extraInfo: {
                 title: '',
@@ -606,7 +606,7 @@ export const eventDetails = [
                 ' If you have any queries about the event, feel free to contact the event co- ordinator.',
             ],
 
-            txt1: ' A Team can consist of maximum 2 memebers',
+            txt1: '',
             date: '21/09/2024',
             time: '10.30 AM',
             venue: 'Centre of Excellence , Ground floor, Sengunthar Engineering College.',
