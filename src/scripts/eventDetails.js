@@ -98,69 +98,75 @@ export const eventDetails = [
         staffCord: 'M. Arunkumar - 9894093630',
         img: img2,
         to: '/deptpage',
-        para: "ECE focuses on the design and development of electronic devices and communication systems. It includes the study of analog and digital communications, signal processing, and microelectronics. ECE graduates work on developing advanced communication systems, electronic devices, and integrated circuits that are essential in today’s connected world.",
-        deptSpecialName: "Tragga Talenta",
+        para: 'The Electronics and Communication Engineering Department was established in 1999 and the first batch of students graduated from here in 2003. Thus from a modest beginning in 99 the department has come a long way. Today the department is rated as to one among the leading departments among various colleges of the university. The courses offered are updated regularly to keep pace with the growing demands of the industry and the research community. The laboratories consist of all the latest equipments to meet the dynamic changes in the curriculum. Apart from the regular labs the department is setting up labs in image processing & RF system design etc.' ,
+        deptSpecialName: 'Tragga Talenta',
         deptTxt1: 'Unlock the future of electronics at the ECE Symposium. Dive into innovations, network with visionaries, and shape tomorrows tech landscape',
         to: '/deptpage',
         event1: {
             eventTitle: 'Paper Presentation',
             generalInfo: [
-                'Participants are allowed to present their paper individually or with their team mates.',
+                'students present their research or projects to peers and faculty, often using slides or posters.',
                 'Topics should be based on any technical ideas and  Paper should be in the IEEE format.',
+                'This involves explaining their findings, answering questions, and receiving feedback to enhance their understanding and presentation skills.',
                 'If you have any queries about the event,feel free to contact the co-ordinator.',
-                'Team should consist of Maximum 2 members.'
+            
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
-            time: '11:30PM',
-            venue: 'ECE Block',
+            time: '10:30PM',
+            venue: 'ECE Seminar Hall',
             extraInfo: {
                 title: 'Topics',
-                txt: 'Any Topics as per your wish and convenience ,must be based on latest and trending technology'
+                txt: 'Recent Engineering Innovations, projects, Any ECE related topics'
             },
             coOrdinator: {
                 name: 'V.Gopu ECE-IV yr',
                 phn: 7397646116
-            }
+            },
         },
         event2: {
             eventTitle: 'Tricky Circuits',
             generalInfo: [
-                'Updated Soon!'
+                'Technical Aptitude',
+                'Circuit design using Tinkercad',
+                'Given instruction in on the spot',
+                'If you have any queries about the event,feel free to contact the co-ordinator.',
             ],
 
-            txt1: 'Updated soon! ',
+            txt1: '',
             date: '21/09/2024',
-            time: '10:30 AM',
-            venue: 'ECE Block',
+            time: '10:00 AM',
+            venue: 'ECE Seminar Hall',
             extraInfo: {
-                title: 'Rounds:',
-                txt1: 'updated soon',
-                txt2: 'updated soon'
+                title: '',
+                txt1: '',
+                txt2: ''
             },
             coOrdinator: {
-                name: 'V.Gopu ECE-IV yr',
-                phn: 7397646116
-            }
+                name: 'Dayamanikandan.A.T',
+                phn: 9629347184
+            },
         },
         event3: {
             eventTitle: 'Googler',
             generalInfo: [
-                'Updated Soon.'
+                'It’s a fun game.',
+                'Here participants need to find a word ECE related any technical word to ECE by connecting 3 or more pictures',
+                'If you have any queries about the event,feel free to contact the co-ordinator.',
             ],
 
-            txt1: 'Updated Soon',
+            txt1: '',
             date: '21/09/2024',
-            time: '11.45 AM',
-            venue: 'ECE  Block',
+            time: '10.30 AM',
+            venue: 'ECE Seminar Hall',
             extraInfo: {
-                title: 'Theme',
-                txt: 'Updated soon!'
+                title: '',
+                txt: ''
             },
             coOrdinator: {
-                name: 'V.Gopu ECE-IV yr',
-                phn: 7397646116
-            }
+                name: 'K.Bhuvaneshwaran',
+                phn: 8754683179
+            },
         },
     },
     {
