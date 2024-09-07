@@ -6,14 +6,14 @@ const BusRoute = () => {
             id: 1,
             routeName: "Route 1 :Tiruchengodu Bus Stand",
             stops: ["Stop A", "Stop B", "Stop C", "Stop D"],
-            schedule: "7:00 AM - 8:00 PM",
+            schedule: "7:00 AM ",
             frequency: "Every 30 minutes",
         },
         {
             id: 2,
             routeName: "Route 2 : Salem New Bus Stand",
             stops: ["Stop E", "Stop F", "Stop G", "Stop H"],
-            schedule: "6:00 AM - 10:00 PM",
+            schedule: "6:00 AM ",
             frequency: "Every 20 minutes",
         },
         {
@@ -27,7 +27,7 @@ const BusRoute = () => {
             id: 4,
             routeName: "Route 4 : Erode Bus Stand",
             stops: ["Stop I", "Stop J", "Stop K", "Stop L"],
-            schedule: "5:00 AM - 9:00 PM",
+            schedule: "5:00 AM ",
             frequency: "Every 15 minutes",
         },
     ];

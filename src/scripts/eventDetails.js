@@ -786,7 +786,7 @@ export const eventDetails = [
                 'Team should consist of Maximum 2 members.'
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
-            date: '20/09/2023',
+            date: '20/09/2024',
             time: '11:30AM',
             venue: 'CSE lab-I,1nd floor,CSE Block',
             extraInfo: {
@@ -823,7 +823,7 @@ export const eventDetails = [
                 'Test your digital skills and become a cyber-savvy website updater!.'
             ],
             txt1: 'Indivual participation, no team participation allowed',
-            date: '21/09/2023',
+            date: '21/09/2024',
             time: '11.45 AM',
             venue: 'CSE lab-I,1st floor,Main Block',
             extraInfo: {
@@ -874,7 +874,7 @@ export const eventDetails = [
                 'Updated Soon!'
             ],
             txt1: 'Updated Soon!',
-            date: '27/09/2023',
+            date: '21/09/2024',
             time: '10:30 AM',
             venue: 'Pharm lab-I,1nd floor,Main Block',
             extraInfo: {

@@ -26,8 +26,13 @@ function DeptPage() {
                         <DesktopArrow className='text-4xl' />
                     )
                 }
-            </Link> */}
-            <Element name="deptpage-div-1" className="flex flex-col md:flex-row justify-between px-8 pt-5">
+            </Link> 
+            <div class="bg-cover bg-center h-screen" 
+         style="background-image: url('your-image-url.jpg');">
+  <!-- Your content here -->
+</div>
+            */}
+            <Element name="deptpage-div-1" className="flex flex-col bg-cover bg-center md:flex-row justify-between px-8 pt-5">
                 <div className="md:w-1/3 flex md:justify-center items-center">
                     <img src={deptObj.img} alt={deptObj.deptName} className="h-52 md:h-60 w-52 md:w-60 rounded-full object-cover" />
                 </div>
