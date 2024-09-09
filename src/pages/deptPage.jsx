@@ -4,8 +4,10 @@ import { Element } from 'react-scroll';
 import Button from '../components/Button';
 import EventSection from '../components/eventSection';
 import { IoIosArrowBack as MobileArrow, IoMdArrowRoundBack as DesktopArrow } from "react-icons/io";
+import useScrollToTop from '../scripts/utils/hooks';
 
 function DeptPage() {
+    useScrollToTop();
     const location = useLocation();
     const deptObj = location.state;
     console.log(location);

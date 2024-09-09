@@ -145,7 +145,7 @@ function Home() {
                             return (
                                 <div className="z-10 min-w-[280px] grid justify-items-center grid-cols-1 bg-slate-900 p-5 rounded-lg transition-transform duration-700 hover:scale-110 cursor-pointer" key={i}>
                                     <div className="w-48 h-48 rounded-full overflow-hidden mb-4">
-                                        <img src={e.img} alt={e.name} className="w-full h-full object-cover" />
+                                        <img src={e.img} alt={e.name} className="w-full h-full object-cover bg-gray-400" />
                                     </div>
                                     <h2 className="text-xl font-semibold mb-1">{e.name}</h2>
                                     <h3 className="text-lg font-medium mb-1">{e.role1}</h3>

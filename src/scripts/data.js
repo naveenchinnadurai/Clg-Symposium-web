@@ -1,32 +1,32 @@
 import correspondent from '../assets/chiefGuest/correspondent.webp'
 import principal from '../assets/chiefGuest/principal.webp'
-import guest3 from '../assets/chiefGuest/guest3.jpg'
-import guest4 from '../assets/chiefGuest/guest4.jpg'
+import chairman from '../assets/chiefGuest/chairman.webp'
 
 export const guestInfo = [
     {
         id:1,
+        name: 'Thiru. Jansons. T. S. Natarajan',
+        role1:'Chairman',
+        role: 'Sengunthar Institution',
+        img: chairman
+    },
+    {
+        id:2,
         name: 'Prof. A. Baladhandapani',
-        role1:'Founder & Chairman',
+        role1:'Correspondent',
         role: 'Sengunthar Institution',
         img: correspondent
     },
     {
-        id:2,
+        id:3,
         name: 'Dr. R.Satish Kumar',
         role1: 'Principal',
         role: 'Sengunthar Engineering College',
         img: principal
     },
     {
-        id:3,
-        name: 'Updated Soon!',
-       
-    },
-    {
         id:4,
-        name: 'Updated Soon!',
-       
+        name:"will be notified soon"
     }
 ]
 
