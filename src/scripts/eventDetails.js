@@ -194,14 +194,14 @@ export const eventDetails = [
             txt1: 'Last date for paper Submission:13/09/2024',
             date: '20/09/2024',
             time: '11:30AM',
-            venue: 'IT lab-I,1nd floor,IT Block',
+            venue: 'IT lab-I,Ground floor,IT Block',
             extraInfo: {
                 title: 'Topics',
                 txt: 'Exploring innovative IT solutions for enhanced data security, efficient cloud computing, and the future of artificial intelligence.'
             },
             coOrdinator: {
-                name: 'S. Thennavan IV-IT',
-                phn: 9677772756
+                name: 'S. Vijay (IT IV yr)',
+                phn: 9345591399
             }
         },
         event2: {
@@ -219,8 +219,8 @@ export const eventDetails = [
                 txt2: ' updated Soon!'
             },
             coOrdinator: {
-                name: 'Muneeswaran.S(st)IT-IV yr',
-                phn: 8220723803
+                name: 'Senthil Andavan.K (IT-IV yr)',
+                phn: 9597908188
             }
         },
         event3: {
@@ -235,13 +235,13 @@ export const eventDetails = [
             txt1: 'Indivual participation, no team participation allowed',
             date: '21/09/2024',
             time: '11.45 AM',
-            venue: 'IT lab-I,2nd floor,IT Block',
+            venue: 'IT lab-I,Ground floor,IT Block',
             extraInfo: {
                 title: 'Theme',
                 txt: 'Theme will be announced on the spot, can use any type design tools.'
             },
             coOrdinator: {
-                name: 'R.Kamesh',
+                name: 'R.Kamesh (IT-IV yr)',
                 phn: 6374948104
             }
         },
@@ -786,7 +786,7 @@ export const eventDetails = [
                 'Team should consist of Maximum 2 members.'
             ],
             txt1: 'Last date for paper Submission:13/09/2024',
-            date: '20/09/2023',
+            date: '20/09/2024',
             time: '11:30AM',
             venue: 'CSE lab-I,1nd floor,CSE Block',
             extraInfo: {
@@ -823,7 +823,7 @@ export const eventDetails = [
                 'Test your digital skills and become a cyber-savvy website updater!.'
             ],
             txt1: 'Indivual participation, no team participation allowed',
-            date: '21/09/2023',
+            date: '21/09/2024',
             time: '11.45 AM',
             venue: 'CSE lab-I,1st floor,Main Block',
             extraInfo: {
@@ -874,7 +874,7 @@ export const eventDetails = [
                 'Updated Soon!'
             ],
             txt1: 'Updated Soon!',
-            date: '27/09/2023',
+            date: '21/09/2024',
             time: '10:30 AM',
             venue: 'Pharm lab-I,1nd floor,Main Block',
             extraInfo: {
